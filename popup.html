@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSEnter for AI Chat</title>
+
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --fg-sub: #666666;
+      --focus: #0066cc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1e1e1e;
+        --fg: #f0f0f0;
+        --fg-sub: #aaaaaa;
+        --focus: #4da6ff;
+      }
+    }
+
+    body {
+      width: 220px;
+      padding: 16px;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 13px;
+      line-height: 1.5;
+      background: var(--bg);
+      color: var(--fg);
+    }
+
+    h1 {
+      font-size: 13px;
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .current {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--fg);
+      margin-bottom: 12px;
+    }
+
+    fieldset {
+      border: none; /* 枠線は完全に使わない */
+      padding: 0;
+      margin: 0;
+    }
+
+    .radio-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      color: var(--fg);
+    }
+
+    /* カスタムラジオ */
+    input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 14px;
+      height: 14px;
+      border: 1.5px solid currentColor;
+      border-radius: 50%;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    input[type="radio"]:checked::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    input[type="radio"]:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .note {
+      margin-top: 14px;
+      font-size: 11px;
+      color: var(--fg-sub);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>CSEnter for AI Chat</h1>
+
+  <div class="current">
+    Current: <span id="currentKey">—</span>
+  </div>
+
+  <fieldset>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="sendKey" value="Default" />
+        Default
+      </label>
+
+      <label>
+        <input type="radio" name="sendKey" value="Ctrl+Enter" />
+        Ctrl + Enter
+      </label>
+
+      <label>
+        <input type="radio" name="sendKey" value="Shift+Enter" />
+        Shift + Enter
+      </label>
+
+      <label>
+        <input type="radio" name="sendKey" value="Ctrl+Shift+Enter" />
+        Ctrl + Shift + Enter
+      </label>
+    </div>
+  </fieldset>
+
+  <p class="note">
+    On macOS, Ctrl functions as Cmd.
+  </p>
+
+  <script src="popup.js"></script>
+</body>
