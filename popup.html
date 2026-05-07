@@ -54,9 +54,18 @@
     }
 
     fieldset {
-      border: none; /* 枠線は完全に使わない */
+      border: none;
       padding: 0;
       margin: 0;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
     }
 
     .radio-group {
@@ -120,6 +129,7 @@
   </div>
 
   <fieldset>
+    <legend class="sr-only">Send key</legend>
     <div class="radio-group">
       <label>
         <input type="radio" name="sendKey" value="Default" />
