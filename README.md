@@ -10,6 +10,19 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 
 > Microsoft Copilot is not supported in the current version.
 
+## Installation
+
+### Chrome Web Store
+
+*(Coming soon)*
+
+### Developer Mode (Manual Install)
+
+1. Download or clone this repository
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable **Developer mode** (toggle in the top right)
+4. Click **Load unpacked** and select the repository folder
+
 ## How to Use
 
 1. Click the extension icon to open the popup
@@ -44,6 +57,19 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - Gemini (gemini.google.com)
 
 > 現在のバージョンでは Microsoft Copilot には対応していません。
+
+## インストール
+
+### Chrome ウェブストア
+
+*(近日公開予定)*
+
+### デベロッパーモード（手動インストール）
+
+1. このリポジトリをダウンロードまたはクローン
+2. Chromeで `chrome://extensions/` を開く
+3. 右上の **デベロッパーモード** を有効にする
+4. **パッケージ化されていない拡張機能を読み込む** をクリックし、リポジトリのフォルダを選択
 
 ## 使い方
 
