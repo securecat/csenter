@@ -1,6 +1,9 @@
 Are you tired of accidentally sending an unfinished message just by pressing Enter?
+
 In many languages — especially those using IME-based input like Japanese — the Enter key is pressed frequently during text composition to confirm character conversions. This makes accidental sends an everyday frustration.
+
 On top of that, in most text editors, Enter means "new line" — not "send." Having Enter trigger a send goes against the mental model most people already have. For users with upper limb disabilities, tremor conditions, or those less familiar with keyboard shortcuts, an accidental send can be especially disruptive.
+
 CSEnter for AI Chat solves this by letting you choose your preferred send key:
 
 - Ctrl+Enter
@@ -21,7 +24,11 @@ Key features:
 ----
 
 Enterキーを押しただけで、書きかけのメッセージが送信されてしまった経験はありませんか？
-日本語をはじめIMEを使用する言語圏では、文字変換の確定操作としてEnterキーを押す場面が多く、誤送信はよくある悩みのひとつです。また、一般的なテキストエディタではEnterキーは「改行」を意味します。Enterで送信されてしまうことは、多くの方が慣れ親しんだ操作感覚とも一致しません。上肢障害や振動障害のある方、キーボード操作に不慣れな方にとっても、Enter単体での送信は意図しない操作につながりやすいものです。
+
+日本語をはじめIMEを使用する言語圏では、文字変換の確定操作としてEnterキーを押す場面が多く、誤送信はよくある悩みのひとつです。
+
+また、一般的なテキストエディタではEnterキーは「改行」を意味します。Enterで送信されてしまうことは、多くの方が慣れ親しんだ操作感覚とも一致しません。上肢障害や振動障害のある方、キーボード操作に不慣れな方にとっても、Enter単体での送信は意図しない操作につながりやすいものです。
+
 CSEnter for AI Chat は、送信に使うキーをご自身で選べるChrome拡張です：
 
 - Ctrl+Enter
