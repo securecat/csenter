@@ -44,6 +44,16 @@ On macOS, Ctrl functions as Cmd.
 
 Enter key presses during IME composition (e.g. Japanese input) are ignored and pass through as normal.
 
+## Changelog
+
+**1.0.1**
+
+- Improved accessibility: added `<legend>` to the popup `<fieldset>`
+
+**1.0.0**
+
+Initial release
+
 ---
 
 # CSEnter for AI Chat（日本語）
@@ -91,3 +101,14 @@ macOSでは Ctrl を Cmd として動作します。
 ## IME対応
 
 変換中のEnterキー（確定操作）には反応しません。
+
+## 更新履歴
+
+**1.0.1**
+
+- アクセシビリティ改善：ポップアップの `<fieldset>` に `<legend>` を追加
+
+**1.0.0**
+
+- 初回リリース
+
