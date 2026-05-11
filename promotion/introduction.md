@@ -21,6 +21,8 @@ Key features:
 - Supports Claude, ChatGPT, and Gemini
 - Simple, easy-to-understand interface
 
+Source code is available on GitHub: https://github.com/securecat/csenter
+
 ----
 
 Enterキーを押しただけで、書きかけのメッセージが送信されてしまった経験はありませんか？
@@ -45,3 +47,5 @@ CSEnter for AI Chat は、送信に使うキーをご自身で選べるChrome拡
 - 設定はブラウザアカウントに同期保存されます
 - Claude・ChatGPT・Geminiに対応
 - シンプルで直感的なUI（英語表記ですが、簡単な英語のみです）
+
+ソースコードはGitHubで公開しています：https://github.com/securecat/csenter
