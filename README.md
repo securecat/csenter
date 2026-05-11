@@ -8,13 +8,13 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
 
-> Microsoft Copilot is not supported in the current version.
+> Microsoft Copilot is not supported.
 
 ## Installation
 
 ### Chrome Web Store
 
-*(Coming soon)*
+https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcglcadpcdkehgfpn?authuser=0&hl=ja
 
 ### Developer Mode (Manual Install)
 
@@ -56,13 +56,13 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
 
-> 現在のバージョンでは Microsoft Copilot には対応していません。
+> Microsoft Copilot には対応していません。
 
 ## インストール
 
 ### Chrome ウェブストア
 
-*(近日公開予定)*
+https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcglcadpcdkehgfpn?authuser=0&hl=ja
 
 ### デベロッパーモード（手動インストール）
 
