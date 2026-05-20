@@ -14,7 +14,7 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 
 ### Chrome Web Store
 
-https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcglcadpcdkehgfpn?authuser=0&hl=ja
+https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcglcadpcdkehgfpn
 
 > The Chrome Web Store version may lag behind the repository during the review process.
 
@@ -78,7 +78,7 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 
 ### Chrome ウェブストア
 
-https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcglcadpcdkehgfpn?authuser=0&hl=ja
+https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcglcadpcdkehgfpn
 
 > Chrome ウェブストア版は、審査中のため最新リリースより古い場合があります。
 
