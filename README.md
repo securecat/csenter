@@ -48,17 +48,17 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-**1.0.2**
+### v1.0.2 — 2026-05-14
 
 - Fixed radio button visibility in dark theme
 
-**1.0.1**
+### v1.0.1 — 2026-05-11
 
 - Improved accessibility: added `<legend>` to the popup `<fieldset>`
 
-**1.0.0**
+### v1.0.0 — 2026-05-07
 
-Initial release
+- Initial release
 
 ---
 
@@ -112,15 +112,15 @@ macOSでは Ctrl を Cmd として動作します。
 
 ## 更新履歴
 
-**1.0.2**
+### v1.0.2 — 2026-05-14
 
 - ダークテーマでのラジオボタンの表示を修正
 
-**1.0.1**
+### v1.0.1 — 2026-05-11
 
 - アクセシビリティ改善：ポップアップの `<fieldset>` に `<legend>` を追加
 
-**1.0.0**
+### v1.0.0 — 2026-05-07
 
 - 初回リリース
 
