@@ -6,5 +6,5 @@
   - 形式は [Keep a Changelog](https://keepachangelog.com/) に準拠すること（`[Unreleased]` セクションは使わない）
   - バージョン見出し：`### [1.0.2] - 2026-05-28`
   - 変更種別を `####` 見出しで分類すること
-    - 英語セクション：`Added` / `Changed` / `Fixed` / `Removed` / `Security` など
-    - 日本語セクション：`追加` / `変更` / `修正` / `削除` / `セキュリティ` など
+    - 英語セクション：`Added` / `Changed` / `Deprecated` / `Removed` / `Fixed` / `Security`
+    - 日本語セクション：`追加` / `変更` / `非推奨` / `削除` / `修正` / `セキュリティ`
