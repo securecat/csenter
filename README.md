@@ -56,7 +56,7 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ### [1.0.1] - 2026-05-11
 
-#### Added
+#### Fixed
 
 - Improved accessibility: added `<legend>` to the popup `<fieldset>`
 
@@ -118,13 +118,13 @@ macOSでは Ctrl を Cmd として動作します。
 
 ### [1.0.2] - 2026-05-14
 
-#### Fixed
+#### 修正
 
 - ダークテーマでのラジオボタンの表示を修正
 
 ### [1.0.1] - 2026-05-11
 
-#### Added
+#### 修正
 
 - アクセシビリティ改善：ポップアップの `<fieldset>` に `<legend>` を追加
 
