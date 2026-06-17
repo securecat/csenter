@@ -2,9 +2,19 @@
 
 - バージョン記載箇所：`manifest.json` の `version`
 - 更新のたびに semver に従ってバージョンを上げること
-- README.md の Changelog セクション（日本語は 更新履歴 セクション）に変更内容を追記すること
-  - 形式は [Keep a Changelog](https://keepachangelog.com/) に準拠すること（`[Unreleased]` セクションは使わない）
-  - バージョン見出し：`### [1.0.2] - 2026-05-28`
-  - 変更種別を `####` 見出しで分類すること
-    - 英語セクション：`Added` / `Changed` / `Deprecated` / `Removed` / `Fixed` / `Security`
-    - 日本語セクション：`追加` / `変更` / `非推奨` / `削除` / `修正` / `セキュリティ`
+- 変更内容は以下の2箇所に記載すること：
+
+### CHANGELOG.md（全履歴）
+
+- [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 形式に従うこと（ただし `[Unreleased]` セクションは使わない）
+- 英語セクション → `---` → 日本語セクションの構成
+- バージョン見出し形式：`## [1.2.0] - 2026-05-28`
+- 変更は `###` 見出しでカテゴリ別に記載すること
+  - 英語セクション：`Added` / `Changed` / `Deprecated` / `Removed` / `Fixed` / `Security`
+  - 日本語セクション：`追加` / `変更` / `非推奨` / `削除` / `修正` / `セキュリティ`
+
+### README.md（最新バージョンのみ）
+
+- Changelog セクション（日本語は 更新履歴 セクション）に**最新バージョンのみ**記載すること
+- 形式：`### v1.2.0 — 2026-05-28`
+- 古いバージョンの記載は不要（CHANGELOG.md へのリンクで補完済み）
