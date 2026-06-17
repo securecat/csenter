@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "CSEnter for AI Chat",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Change the send trigger key in AI chat services like Claude, ChatGPT, and Gemini.",
   "icons": {
     "16": "icons/icon16.png",
@@ -23,7 +23,8 @@
       "matches": [
         "https://claude.ai/*",
         "https://chatgpt.com/*",
-        "https://gemini.google.com/*"
+        "https://gemini.google.com/*",
+        "https://www.google.com/search*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"

@@ -7,6 +7,7 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - Claude (claude.ai)
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
+- AI Mode in Google Search (google.com/search)
 
 > Microsoft Copilot is not supported.
 
@@ -48,6 +49,12 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
+### [1.1.0] - 2026-06-17
+
+#### Added
+
+- Added support for AI Mode in Google Search
+
 ### [1.0.2] - 2026-05-14
 
 #### Fixed
@@ -75,6 +82,7 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - Claude (claude.ai)
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
+- Google検索 AIモード (google.com/search)
 
 > Microsoft Copilot には対応していません。
 
@@ -115,6 +123,12 @@ macOSでは Ctrl を Cmd として動作します。
 変換中のEnterキー（確定操作）には反応しません。
 
 ## 更新履歴
+
+### [1.1.0] - 2026-06-17
+
+#### 追加
+
+- Google検索 AIモードに対応
 
 ### [1.0.2] - 2026-05-14
 

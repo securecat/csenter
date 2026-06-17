@@ -49,6 +49,15 @@
     }));
   }
 
+  function insertNewlineIntoTextarea(el) {
+    const start = el.selectionStart;
+    const end = el.selectionEnd;
+    const val = el.value;
+    el.value = val.slice(0, start) + '\n' + val.slice(end);
+    el.selectionStart = el.selectionEnd = start + 1;
+    el.dispatchEvent(new Event('input', { bubbles: true }));
+  }
+
   function handleKeydown(e) {
     if (e.key !== 'Enter') return;
     if (e.isComposing || e.keyCode === 229) return;
@@ -62,7 +71,12 @@
     } else if (isNewlineKey(e)) {
       e.preventDefault();
       e.stopPropagation();
-      fireShiftEnter(e.target);
+      // textareaの場合は直接改行を挿入する、以外はShift+Enterを再発火
+      if (e.target.tagName === 'TEXTAREA') {
+        insertNewlineIntoTextarea(e.target);
+      } else {
+        fireShiftEnter(e.target);
+      }
     }
   }
 
