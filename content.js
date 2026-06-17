@@ -64,6 +64,9 @@
     if (!e.isTrusted) return;
     if (currentSendKey === 'Default') return;
 
+    // Google検索ページではAIモードの入力欄のみ対象
+    if (location.hostname === 'www.google.com' && e.target.id !== 'ITIRGe') return;
+
     if (isSendKey(e)) {
       e.preventDefault();
       e.stopPropagation();
@@ -71,7 +74,7 @@
     } else if (isNewlineKey(e)) {
       e.preventDefault();
       e.stopPropagation();
-      // textareaの場合は直接改行を挿入する、以外はShift+Enterを再発火
+      // textareaの場合は直接改行を挿入、それ以外はShift+Enterを再発火
       if (e.target.tagName === 'TEXTAREA') {
         insertNewlineIntoTextarea(e.target);
       } else {
