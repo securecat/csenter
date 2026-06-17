@@ -49,13 +49,13 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for full history.
-
 ### v1.1.0 — 2026-06-17
 
 #### Added
 
 - Added support for AI Mode in Google Search
+
+See [CHANGELOG.md](CHANGELOG.md) for full history.
 
 ---
 
@@ -110,11 +110,10 @@ macOSでは Ctrl を Cmd として動作します。
 
 ## 更新履歴
 
-全履歴は [CHANGELOG.md](CHANGELOG.md) を参照してください。
-
 ### v1.1.0 — 2026-06-17
 
 #### 追加
 
 - Google検索 AIモードに対応
 
+全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
