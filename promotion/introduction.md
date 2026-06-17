@@ -18,7 +18,7 @@ Key features:
 - Saves time and avoids wasting conversation context
 - Settings apply instantly — no page reload needed
 - Settings are synced across devices via your browser account
-- Supports Claude, ChatGPT, and Gemini
+- Supports Claude, ChatGPT, Gemini, and AI Mode in Google Search
 - Simple, easy-to-understand interface
 
 Source code is available on GitHub: https://github.com/securecat/csenter
@@ -45,7 +45,7 @@ CSEnter for AI Chat は、送信に使うキーをご自身で選べるChrome拡
 - 無駄なコンテキスト消費・時間の浪費を回避
 - 設定はリロード不要でリアルタイムに反映
 - 設定はブラウザアカウントに同期保存されます
-- Claude・ChatGPT・Geminiに対応
+- Claude・ChatGPT・Gemini・Google検索 AIモードに対応
 - シンプルで直感的なUI（英語表記ですが、簡単な英語のみです）
 
 ソースコードはGitHubで公開しています：https://github.com/securecat/csenter
