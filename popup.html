@@ -119,16 +119,13 @@
       line-height: 1.6;
     }
 
-    .advanced-link {
-      display: block;
+    .advanced-wrap {
       margin-top: 12px;
       font-size: 11px;
-      color: var(--fg-sub);
-      text-align: right;
-      text-decoration: none;
     }
 
-    .advanced-link:hover {
+    .advanced-link {
+      color: var(--fg-sub);
       text-decoration: underline;
     }
 
@@ -176,7 +173,7 @@
     On macOS, Ctrl functions as Cmd.
   </p>
 
-  <a href="#" class="advanced-link" id="advancedLink">Advanced Settings</a>
+  <p class="advanced-wrap"><a href="#" class="advanced-link" id="advancedLink">Advanced Settings</a></p>
 
   <script src="popup.js" defer></script>
 </body>
