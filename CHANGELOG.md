@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.1.3] - 2026-06-19
+
+### Changed
+
+- Improve Google Search targeting: exclude the search box by `name="q"` instead of matching an obfuscated class name
+
+## [1.1.2] - 2026-06-19
+
+### Fixed
+
+- Fix detection of AI Mode input in Google Search (Google changed the attribute from `id="ITIRGe"` to `class="ITIRGe"`)
+
 ## [1.1.1] - 2026-06-17
 
 ### Fixed
@@ -34,6 +46,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.1.3] - 2026-06-19
+
+### 変更
+
+- Google検索の対象判定を改善：難読化クラス名への依存をやめ、`name="q"` で通常の検索窓を除外する方式に変更
+
+## [1.1.2] - 2026-06-19
+
+### 修正
+
+- Google検索のAIモード入力欄の検出を修正（Googleが `id="ITIRGe"` を `class="ITIRGe"` に変更した影響）
 
 ## [1.1.1] - 2026-06-17
 

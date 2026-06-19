@@ -49,11 +49,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.1.1 — 2026-06-17
+### v1.1.3 — 2026-06-19
 
-#### Fixed
+#### Changed
 
-- Limit Google Search integration to AI Mode input only
+- Improve Google Search targeting: exclude the search box by `name="q"` instead of matching an obfuscated class name
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -110,10 +110,10 @@ macOSでは Ctrl を Cmd として動作します。
 
 ## 更新履歴
 
-### v1.1.1 — 2026-06-17
+### v1.1.3 — 2026-06-19
 
-#### 修正
+#### 変更
 
-- Google検索との連携をAIモードの入力欄のみに限定
+- Google検索の対象判定を改善：難読化クラス名への依存をやめ、`name="q"` で通常の検索窓を除外する方式に変更
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。

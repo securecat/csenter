@@ -64,8 +64,8 @@
     if (!e.isTrusted) return;
     if (currentSendKey === 'Default') return;
 
-    // Google検索ページではAIモードの入力欄のみ対象
-    if (location.hostname === 'www.google.com' && e.target.id !== 'ITIRGe') return;
+    // Google検索ページでは通常の検索窓（name="q"）を除外
+    if (location.hostname === 'www.google.com' && e.target.name === 'q') return;
 
     if (isSendKey(e)) {
       e.preventDefault();
