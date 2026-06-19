@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.0] - 2026-06-19
+
+### Added
+
+- Add Advanced Settings page with per-service enable/disable toggles
+
 ## [1.1.3] - 2026-06-19
 
 ### Changed
@@ -46,6 +52,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.2.0] - 2026-06-19
+
+### 追加
+
+- サービスごとに有効/無効を切り替えられる「上級者向け設定」ページを追加
 
 ## [1.1.3] - 2026-06-19
 

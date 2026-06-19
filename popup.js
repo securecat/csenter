@@ -1,3 +1,8 @@
+document.getElementById('advancedLink').addEventListener('click', (e) => {
+  e.preventDefault();
+  chrome.runtime.openOptionsPage();
+});
+
 const radios = document.querySelectorAll('input[name="sendKey"]');
 const currentKey = document.getElementById("currentKey");
 

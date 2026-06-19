@@ -3,9 +3,12 @@
   const isMac = navigator.platform.toUpperCase().includes('MAC');
 
   let currentSendKey = 'Default';
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true };
+  let enabledServices = { ...DEFAULT_SERVICES };
 
-  chrome.storage.sync.get({ sendKey: 'Default' }, ({ sendKey }) => {
+  chrome.storage.sync.get({ sendKey: 'Default', services: DEFAULT_SERVICES }, ({ sendKey, services }) => {
     currentSendKey = sendKey;
+    enabledServices = services;
   });
 
   chrome.runtime.onMessage.addListener((message) => {
@@ -13,6 +16,21 @@
       currentSendKey = message.sendKey;
     }
   });
+
+  chrome.storage.onChanged.addListener((changes) => {
+    if (changes.services) {
+      enabledServices = changes.services.newValue;
+    }
+  });
+
+  function getCurrentService() {
+    const h = location.hostname;
+    if (h === 'claude.ai') return 'claude';
+    if (h === 'chatgpt.com') return 'chatgpt';
+    if (h === 'gemini.google.com') return 'gemini';
+    if (h === 'www.google.com') return 'google';
+    return null;
+  }
 
   function isSendKey(e) {
     if (e.key !== 'Enter') return false;
@@ -63,6 +81,9 @@
     if (e.isComposing || e.keyCode === 229) return;
     if (!e.isTrusted) return;
     if (currentSendKey === 'Default') return;
+
+    const service = getCurrentService();
+    if (!service || !enabledServices[service]) return;
 
     // Google検索ページでは通常の検索窓（name="q"）を除外
     if (location.hostname === 'www.google.com' && e.target.name === 'q') return;

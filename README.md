@@ -49,11 +49,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.1.3 — 2026-06-19
+### v1.2.0 — 2026-06-19
 
-#### Changed
+#### Added
 
-- Improve Google Search targeting: exclude the search box by `name="q"` instead of matching an obfuscated class name
+- Add Advanced Settings page with per-service enable/disable toggles
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -110,10 +110,10 @@ macOSでは Ctrl を Cmd として動作します。
 
 ## 更新履歴
 
-### v1.1.3 — 2026-06-19
+### v1.2.0 — 2026-06-19
 
-#### 変更
+#### 追加
 
-- Google検索の対象判定を改善：難読化クラス名への依存をやめ、`name="q"` で通常の検索窓を除外する方式に変更
+- サービスごとに有効/無効を切り替えられる「上級者向け設定」ページを追加
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
