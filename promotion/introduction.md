@@ -10,7 +10,7 @@ CSEnter for AI Chat solves this by letting you choose your preferred send key:
 - Shift+Enter
 - Ctrl+Shift+Enter
 
-Enter alone will insert a new line — just like in a text editor.
+Enter alone will insert a new line — just like in a text editor. On macOS, Ctrl functions as Cmd.
 
 Key features:
 
@@ -21,7 +21,8 @@ Key features:
 - Supports Claude, ChatGPT, Gemini, and AI Mode in Google Search
 - Simple, easy-to-understand interface
 
-Source code is available on GitHub: https://github.com/securecat/csenter
+Source code is available on GitHub:
+https://github.com/securecat/csenter
 
 ----
 
@@ -37,7 +38,7 @@ CSEnter for AI Chat は、送信に使うキーをご自身で選べるChrome拡
 - Shift+Enter
 - Ctrl+Shift+Enter
 
-いずれかを選択すると、Enter単体の押下は改行として機能します。テキストエディタと同じ感覚で、AIチャットを使えるようになります。
+いずれかを選択すると、Enter単体の押下は改行として機能します。テキストエディタと同じ感覚で、AIチャットを使えるようになります。なお、macOSでは Ctrl を Cmd として動作しますので、macOSユーザーの方もぜひお使いください。
 
 主な特徴：
 
@@ -48,4 +49,6 @@ CSEnter for AI Chat は、送信に使うキーをご自身で選べるChrome拡
 - Claude・ChatGPT・Gemini・Google検索 AIモードに対応
 - シンプルで直感的なUI（英語表記ですが、簡単な英語のみです）
 
-ソースコードはGitHubで公開しています：https://github.com/securecat/csenter
+ソースコードはGitHubで公開しています：
+https://github.com/securecat/csenter
+
