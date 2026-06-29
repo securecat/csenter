@@ -49,11 +49,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.2.0 — 2026-06-19
+### v1.2.1 — 2026-06-29
 
-#### Added
+#### Changed
 
-- Add Advanced Settings page with per-service enable/disable toggles
+- Increase minimum font size to 14px in popup and options pages for improved accessibility
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -110,10 +110,10 @@ macOSでは Ctrl を Cmd として動作します。
 
 ## 更新履歴
 
-### v1.2.0 — 2026-06-19
+### v1.2.1 — 2026-06-29
 
-#### 追加
+#### 変更
 
-- サービスごとに有効/無効を切り替えられる「上級者向け設定」ページを追加
+- アクセシビリティ改善のため、ポップアップおよび設定ページのフォントサイズを14px以上に統一
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。

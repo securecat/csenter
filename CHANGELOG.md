@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.1] - 2026-06-29
+
+### Changed
+
+- Increase minimum font size to 14px in popup and options pages for improved accessibility
+
 ## [1.2.0] - 2026-06-19
 
 ### Added
@@ -52,6 +58,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.2.1] - 2026-06-29
+
+### 変更
+
+- アクセシビリティ改善のため、ポップアップおよび設定ページのフォントサイズを14px以上に統一
 
 ## [1.2.0] - 2026-06-19
 
