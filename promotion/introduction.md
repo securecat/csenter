@@ -21,7 +21,7 @@ Key features:
 - Supports Claude, ChatGPT, Gemini, and AI Mode in Google Search
 - Simple, easy-to-understand interface
 
-Source code is available on GitHub:
+Source code and changelog are available on GitHub:
 https://github.com/securecat/csenter
 
 ----
@@ -49,6 +49,6 @@ CSEnter for AI Chat は、送信に使うキーをご自身で選べるChrome拡
 - Claude・ChatGPT・Gemini・Google検索 AIモードに対応
 - シンプルで直感的なUI（英語表記ですが、簡単な英語のみです）
 
-ソースコードはGitHubで公開しています：
+ソースコードおよび更新履歴はGitHubで公開しています：
 https://github.com/securecat/csenter
 
