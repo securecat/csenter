@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.2.2] - 2026-07-04
+
+### Fixed
+
+- Exclude elements with `role="combobox"` from key handling, preventing CSEnter from interfering with search inputs such as Claude.ai's command palette (also replaces the Google Search-specific exclusion with this more general approach)
+
 ## [1.2.1] - 2026-06-29
 
 ### Changed
@@ -58,6 +64,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.2.2] - 2026-07-04
+
+### 修正
+
+- `role="combobox"` を持つ要素（Claude.aiのコマンドパレットなど）をキー処理の対象外にし、チャット以外の検索入力欄での誤動作を防止（Google検索の個別除外ロジックもこの汎用的な方式に置き換え）
 
 ## [1.2.1] - 2026-06-29
 

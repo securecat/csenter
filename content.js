@@ -85,8 +85,8 @@
     const service = getCurrentService();
     if (!service || !enabledServices[service]) return;
 
-    // Google検索ページでは通常の検索窓（name="q"）を除外
-    if (location.hostname === 'www.google.com' && e.target.name === 'q') return;
+    // comboboxロール（検索窓・コマンドパレットなど）は除外
+    if (e.target.getAttribute('role') === 'combobox') return;
 
     if (isSendKey(e)) {
       e.preventDefault();

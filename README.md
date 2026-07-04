@@ -49,11 +49,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.2.1 — 2026-06-29
+### v1.2.2 — 2026-07-04
 
-#### Changed
+#### Fixed
 
-- Increase minimum font size to 14px in popup and options pages for improved accessibility
+- Exclude elements with `role="combobox"` from key handling, preventing CSEnter from interfering with search inputs such as Claude.ai's command palette (also replaces the Google Search-specific exclusion with this more general approach)
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -110,10 +110,10 @@ macOSでは Ctrl を Cmd と読み替えてください。
 
 ## 更新履歴
 
-### v1.2.1 — 2026-06-29
+### v1.2.2 — 2026-07-04
 
-#### 変更
+#### 修正
 
-- アクセシビリティ改善のため、ポップアップおよび設定ページのフォントサイズを14px以上に統一
+- `role="combobox"` を持つ要素（Claude.aiのコマンドパレットなど）をキー処理の対象外にし、チャット以外の検索入力欄での誤動作を防止（Google検索の個別除外ロジックもこの汎用的な方式に置き換え）
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
