@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSEnter — Advanced Settings</title>
+  <title data-i18n="optionsPageTitle">CSEnter — Advanced Settings</title>
 
   <style>
     *,
@@ -19,7 +19,15 @@
       --fg: #111111;
       --fg-sub: #555555;
       --focus: #0066cc;
-      --border: #cccccc;
+      --border: #000000;
+      --divider: #767676;
+      --fs-base: 14px;
+      --fs-heading: 18px;
+    }
+
+    :root:lang(ja) {
+      --fs-base: 16px;
+      --fs-heading: 20px;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -28,7 +36,8 @@
         --fg: #f0f0f0;
         --fg-sub: #aaaaaa;
         --focus: #4da6ff;
-        --border: #555555;
+        --border: #ffffff;
+        --divider: #8a8a92;
       }
     }
 
@@ -36,30 +45,48 @@
       max-width: 480px;
       margin: 40px auto;
       padding: 0 24px 40px;
-      font-family: system-ui, -apple-system, sans-serif;
-      font-size: 14px;
+      font-family: sans-serif;
+      font-size: var(--fs-base);
       line-height: 1.6;
       background: var(--bg);
       color: var(--fg);
     }
 
     h1 {
-      font-size: 18px;
+      font-size: var(--fs-heading);
       font-weight: 600;
       margin-bottom: 16px;
     }
 
     .description {
-      margin-bottom: 24px;
-      font-size: 14px;
+      margin-bottom: 14px;
+      font-size: var(--fs-base);
       color: var(--fg-sub);
       line-height: 1.7;
     }
 
+    .description + .checkbox-group {
+      margin-top: 0;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--divider);
+      margin: 24px 0;
+    }
+
+    .bug-report {
+      font-size: var(--fs-base);
+      color: var(--fg-sub);
+      line-height: 1.7;
+    }
+
+    .bug-report a,
     .description a {
       color: var(--focus);
     }
 
+    .bug-report a:focus-visible,
     .description a:focus-visible {
       outline: 2px solid var(--focus);
       outline-offset: 2px;
@@ -72,8 +99,12 @@
       padding: 16px;
     }
 
+    fieldset + fieldset {
+      margin-top: 20px;
+    }
+
     legend {
-      font-size: 14px;
+      font-size: var(--fs-base);
       font-weight: 600;
       padding: 0 6px;
       color: var(--fg-sub);
@@ -81,7 +112,8 @@
       letter-spacing: 0.06em;
     }
 
-    .checkbox-group {
+    .checkbox-group,
+    .radio-group {
       display: flex;
       flex-direction: column;
       gap: 14px;
@@ -93,7 +125,7 @@
       align-items: center;
       gap: 10px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: var(--fs-base);
     }
 
     input[type="checkbox"] {
@@ -129,39 +161,86 @@
       outline: 2px solid var(--focus);
       outline-offset: 2px;
     }
+
+    input[type="radio"] {
+      appearance: none;
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border: 1.5px solid var(--fg);
+      border-radius: 50%;
+      position: relative;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    input[type="radio"]:checked::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: var(--fg);
+    }
+
+    input[type="radio"]:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
   </style>
 </head>
 
 <body>
-  <h1>Advanced Settings</h1>
-
-  <p class="description">
-    If a service update causes unexpected behavior, you can disable CSEnter for that service here while a fix is in progress.
-    Found a bug? <a href="https://github.com/securecat/csenter/issues" target="_blank" rel="noopener">Report it on GitHub Issues</a>.
-  </p>
+  <h1 data-i18n="optionsTitle">Advanced Settings</h1>
 
   <fieldset>
-    <legend>Enabled services</legend>
-    <div class="checkbox-group">
+    <legend data-i18n="optionsLanguageLegend">UI Language</legend>
+    <div class="radio-group">
       <label>
-        <input type="checkbox" name="claude" />
-        Claude (claude.ai)
+        <input type="radio" name="uiLanguage" value="en" />
+        English
       </label>
       <label>
-        <input type="checkbox" name="chatgpt" />
-        ChatGPT (chatgpt.com)
-      </label>
-      <label>
-        <input type="checkbox" name="gemini" />
-        Gemini (gemini.google.com)
-      </label>
-      <label>
-        <input type="checkbox" name="google" />
-        AI Mode in Google Search (google.com/search)
+        <input type="radio" name="uiLanguage" value="ja" />
+        日本語
       </label>
     </div>
   </fieldset>
 
-  <script src="options.js"></script>
+  <fieldset>
+    <legend data-i18n="optionsServicesLegend">Enabled services</legend>
+    <p class="description" data-i18n="optionsDescription">
+      If a service update causes unexpected behavior, you can disable CSEnter for that service here while a fix is in progress.
+    </p>
+    <div class="checkbox-group">
+      <label>
+        <input type="checkbox" name="claude" />
+        <span data-i18n="optionsServiceClaude">Claude (claude.ai)</span>
+      </label>
+      <label>
+        <input type="checkbox" name="chatgpt" />
+        <span data-i18n="optionsServiceChatgpt">ChatGPT (chatgpt.com)</span>
+      </label>
+      <label>
+        <input type="checkbox" name="gemini" />
+        <span data-i18n="optionsServiceGemini">Gemini (gemini.google.com)</span>
+      </label>
+      <label>
+        <input type="checkbox" name="google" />
+        <span data-i18n="optionsServiceGoogle">AI Mode in Google Search (google.com/search)</span>
+      </label>
+    </div>
+  </fieldset>
+
+  <hr>
+  <p class="bug-report" data-i18n-html="optionsBugReportHtml">
+    Found a bug? Report it on <a href="https://github.com/securecat/csenter/issues" target="_blank" rel="noopener">GitHub Issues</a>.
+  </p>
+
+  <script src="../i18n/i18n.js" defer></script>
+  <script src="options.js" defer></script>
 </body>
 </html>

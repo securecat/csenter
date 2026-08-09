@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.0] - 2026-08-09
+
+### Added
+
+- Add Japanese UI translation for the popup and options pages
+- Add a UI Language setting on the options page, defaulting to Japanese or English based on the browser's language
+- Add Japanese localization for the extension name and description via `_locales`
+
 ## [1.2.2] - 2026-07-04
 
 ### Fixed
@@ -64,6 +72,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.3.0] - 2026-08-09
+
+### 追加
+
+- ポップアップおよび設定ページの日本語UIを追加
+- 設定ページに「UI言語」設定を追加（ブラウザの言語設定が日本語かどうかに応じて、初期値は日本語または英語になる）
+- `_locales` による拡張機能名・説明文の日本語ローカライズを追加
 
 ## [1.2.2] - 2026-07-04
 

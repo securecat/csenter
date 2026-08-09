@@ -49,11 +49,13 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.2.2 — 2026-07-04
+### v1.3.0 — 2026-08-09
 
-#### Fixed
+#### Added
 
-- Exclude elements with `role="combobox"` from key handling, preventing CSEnter from interfering with search inputs such as Claude.ai's command palette (also replaces the Google Search-specific exclusion with this more general approach)
+- Add Japanese UI translation for the popup and options pages
+- Add a UI Language setting on the options page, defaulting to Japanese or English based on the browser's language
+- Add Japanese localization for the extension name and description via `_locales`
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -102,7 +104,7 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 | Shift+Enter | Shift+Enter | Enter / Ctrl+Enter / その他 |
 | Ctrl+Shift+Enter | Ctrl+Shift+Enter | Enter / Shift+Enter / Ctrl+Enter / その他 |
 
-macOSでは Ctrl を Cmd と読み替えてください。
+macOSでは Ctrl を Cmd に読み替えてください。
 
 ## IME対応
 
@@ -110,10 +112,12 @@ macOSでは Ctrl を Cmd と読み替えてください。
 
 ## 更新履歴
 
-### v1.2.2 — 2026-07-04
+### v1.3.0 — 2026-08-09
 
-#### 修正
+#### 追加
 
-- `role="combobox"` を持つ要素（Claude.aiのコマンドパレットなど）をキー処理の対象外にし、チャット以外の検索入力欄での誤動作を防止（Google検索の個別除外ロジックもこの汎用的な方式に置き換え）
+- ポップアップおよび設定ページの日本語UIを追加
+- 設定ページに「UI言語」設定を追加（ブラウザの言語設定が日本語かどうかに応じて、初期値は日本語または英語になる）
+- `_locales` による拡張機能名・説明文の日本語ローカライズを追加
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。

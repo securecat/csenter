@@ -1,0 +1,63 @@
+{
+  "extensionDescription": {
+    "message": "Change the send trigger key in AI chat services like Claude, ChatGPT, Gemini, and AI Mode in Google Search.",
+    "description": "Extension description shown in the Chrome Web Store and on the extensions page."
+  },
+  "popupTitle": {
+    "message": "CSEnter for AI Chat"
+  },
+  "popupCurrentLabel": {
+    "message": "Current:"
+  },
+  "popupSendKeyLegend": {
+    "message": "Send key"
+  },
+  "popupOptionDefault": {
+    "message": "Default"
+  },
+  "popupOptionCtrlEnter": {
+    "message": "Ctrl + Enter"
+  },
+  "popupOptionShiftEnter": {
+    "message": "Shift + Enter"
+  },
+  "popupOptionCtrlShiftEnter": {
+    "message": "Ctrl + Shift + Enter"
+  },
+  "popupMacNote": {
+    "message": "macOS: Ctrl → Cmd"
+  },
+  "popupAdvancedLink": {
+    "message": "Advanced Settings"
+  },
+  "optionsPageTitle": {
+    "message": "CSEnter — Advanced Settings"
+  },
+  "optionsTitle": {
+    "message": "Advanced Settings"
+  },
+  "optionsDescription": {
+    "message": "If a service update causes unexpected behavior, you can disable CSEnter for that service here while a fix is in progress."
+  },
+  "optionsServicesLegend": {
+    "message": "Enabled services"
+  },
+  "optionsServiceClaude": {
+    "message": "Claude (claude.ai)"
+  },
+  "optionsServiceChatgpt": {
+    "message": "ChatGPT (chatgpt.com)"
+  },
+  "optionsServiceGemini": {
+    "message": "Gemini (gemini.google.com)"
+  },
+  "optionsServiceGoogle": {
+    "message": "AI Mode in Google Search (google.com/search)"
+  },
+  "optionsLanguageLegend": {
+    "message": "UI Language"
+  },
+  "optionsBugReportHtml": {
+    "message": "Found a bug? Report it on <a href=\"https://github.com/securecat/csenter/issues\" target=\"_blank\" rel=\"noopener\">GitHub Issues</a>."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "extensionDescription": {
+    "message": "Claude、ChatGPT、Gemini、Google検索のAIモードで、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。",
+    "description": "Chromeウェブストアおよび拡張機能ページに表示される説明文。"
+  },
+  "popupTitle": {
+    "message": "CSEnter for AI Chat"
+  },
+  "popupCurrentLabel": {
+    "message": "現在の設定:"
+  },
+  "popupSendKeyLegend": {
+    "message": "送信キー"
+  },
+  "popupOptionDefault": {
+    "message": "デフォルト"
+  },
+  "popupOptionCtrlEnter": {
+    "message": "Ctrl + Enter"
+  },
+  "popupOptionShiftEnter": {
+    "message": "Shift + Enter"
+  },
+  "popupOptionCtrlShiftEnter": {
+    "message": "Ctrl + Shift + Enter"
+  },
+  "popupMacNote": {
+    "message": "macOS: Ctrl → Cmd"
+  },
+  "popupAdvancedLink": {
+    "message": "詳細設定"
+  },
+  "optionsPageTitle": {
+    "message": "CSEnter — 詳細設定"
+  },
+  "optionsTitle": {
+    "message": "詳細設定"
+  },
+  "optionsDescription": {
+    "message": "サービス側の仕様変更により動作がおかしくなった場合は、修正が完了するまでここでそのサービスのCSEnterを無効にできます。"
+  },
+  "optionsServicesLegend": {
+    "message": "有効なサービス"
+  },
+  "optionsServiceClaude": {
+    "message": "Claude (claude.ai)"
+  },
+  "optionsServiceChatgpt": {
+    "message": "ChatGPT (chatgpt.com)"
+  },
+  "optionsServiceGemini": {
+    "message": "Gemini (gemini.google.com)"
+  },
+  "optionsServiceGoogle": {
+    "message": "Google検索のAIモード (google.com/search)"
+  },
+  "optionsLanguageLegend": {
+    "message": "UI言語"
+  },
+  "optionsBugReportHtml": {
+    "message": "バグを見つけたら、<a href=\"https://github.com/securecat/csenter/issues\" target=\"_blank\" rel=\"noopener\">GitHub Issues</a> へ報告してください。"
+  }
+}
