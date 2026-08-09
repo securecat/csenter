@@ -99,7 +99,7 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 | 設定 | 送信 | 改行 |
 |------|------|------|
-| Default | Enter | Shift+Enter |
+| デフォルト | Enter | Shift+Enter |
 | Ctrl+Enter | Ctrl+Enter | Enter / Shift+Enter / その他 |
 | Shift+Enter | Shift+Enter | Enter / Ctrl+Enter / その他 |
 | Ctrl+Shift+Enter | Ctrl+Shift+Enter | Enter / Shift+Enter / Ctrl+Enter / その他 |
