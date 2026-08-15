@@ -1,0 +1,8 @@
+/* Google検索AIモードの入力欄で、改行のみの行や行末（次が改行の位置）にキャレットが
+   表示されない不具合を回避する。
+   キャレットの表示/非表示は data-after 属性の先頭1文字が改行かどうかにのみ依存しており、
+   Google自身も最終行が空の場合は data-after=" " にすることで同じ問題を回避している。
+   ここでは data-after が改行で始まる全てのケースに同じ回避策（先頭にスペースを補う）を適用する。 */
+.CEpIFc[data-after^="\a "]::after {
+  content: " " attr(data-after) !important;
+}

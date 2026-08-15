@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.3.1] - 2026-08-15
+
+### Added
+
+- Work around a display bug in Google Search's AI Mode where the text caret doesn't appear on blank lines or at the end of a line
+
 ## [1.3.0] - 2026-08-09
 
 ### Added
@@ -72,6 +78,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.3.1] - 2026-08-15
+
+### 追加
+
+- Google検索のAIモード自体の表示不具合（改行のみの行や行末でキャレットが表示されない）を回避する処理を追加
 
 ## [1.3.0] - 2026-08-09
 

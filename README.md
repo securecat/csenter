@@ -49,13 +49,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.3.0 — 2026-08-09
+### v1.3.1 — 2026-08-15
 
 #### Added
 
-- Add Japanese UI translation for the popup and options pages
-- Add a UI Language setting on the options page, defaulting to Japanese or English based on the browser's language
-- Add Japanese localization for the extension name and description via `_locales`
+- Work around a display bug in Google Search's AI Mode where the text caret doesn't appear on blank lines or at the end of a line
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -112,12 +110,10 @@ macOSでは Ctrl を Cmd に読み替えてください。
 
 ## 更新履歴
 
-### v1.3.0 — 2026-08-09
+### v1.3.1 — 2026-08-15
 
 #### 追加
 
-- ポップアップおよび設定ページの日本語UIを追加
-- 設定ページに「UI言語」設定を追加（ブラウザの言語設定が日本語かどうかに応じて、初期値は日本語または英語になる）
-- `_locales` による拡張機能名・説明文の日本語ローカライズを追加
+- Google検索のAIモード自体の表示不具合（改行のみの行や行末でキャレットが表示されない）を回避する処理を追加
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
