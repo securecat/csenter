@@ -12,20 +12,8 @@
   "popupSendKeyLegend": {
     "message": "Send key"
   },
-  "popupOptionDefault": {
-    "message": "Default"
-  },
-  "popupOptionCtrlEnter": {
-    "message": "Ctrl + Enter"
-  },
-  "popupOptionShiftEnter": {
-    "message": "Shift + Enter"
-  },
-  "popupOptionCtrlShiftEnter": {
-    "message": "Ctrl + Shift + Enter"
-  },
-  "popupMacNote": {
-    "message": "macOS: Ctrl → Cmd"
+  "popupModShift": {
+    "message": "Shift"
   },
   "popupAdvancedLink": {
     "message": "Advanced Settings"

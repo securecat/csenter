@@ -2,18 +2,33 @@
   // macOS判定
   const isMac = navigator.platform.toUpperCase().includes('MAC');
 
-  let currentSendKey = 'Default';
+  const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
+  let currentModifiers = { ...DEFAULT_MODIFIERS };
   const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
-  chrome.storage.sync.get({ sendKey: 'Default', services: DEFAULT_SERVICES }, ({ sendKey, services }) => {
-    currentSendKey = sendKey;
+  // 旧バージョン（ラジオ選択式）からの移行用
+  function legacySendKeyToModifiers(sendKey) {
+    switch (sendKey) {
+      case 'Ctrl+Enter':       return { shift: false, ctrl: true,  alt: false };
+      case 'Shift+Enter':      return { shift: true,  ctrl: false, alt: false };
+      case 'Ctrl+Shift+Enter': return { shift: true,  ctrl: true,  alt: false };
+      default:                 return { shift: false, ctrl: false, alt: false };
+    }
+  }
+
+  function isDefaultModifiers(modifiers) {
+    return !modifiers.shift && !modifiers.ctrl && !modifiers.alt;
+  }
+
+  chrome.storage.sync.get({ modifiers: null, sendKey: 'Default', services: DEFAULT_SERVICES }, ({ modifiers, sendKey, services }) => {
+    currentModifiers = modifiers ?? legacySendKeyToModifiers(sendKey);
     enabledServices = services;
   });
 
   chrome.runtime.onMessage.addListener((message) => {
     if (message.type === 'sendKeyChanged') {
-      currentSendKey = message.sendKey;
+      currentModifiers = message.modifiers;
     }
   });
 
@@ -34,20 +49,16 @@
 
   function isSendKey(e) {
     if (e.key !== 'Enter') return false;
+    if (isDefaultModifiers(currentModifiers)) return false;
     const ctrl = isMac ? e.metaKey : e.ctrlKey;
-    const shift = e.shiftKey;
-    switch (currentSendKey) {
-      case 'Default':          return false;
-      case 'Ctrl+Enter':       return ctrl && !shift;
-      case 'Shift+Enter':      return shift && !ctrl;
-      case 'Ctrl+Shift+Enter': return ctrl && shift;
-      default:                 return false;
-    }
+    return e.shiftKey === currentModifiers.shift &&
+      ctrl === currentModifiers.ctrl &&
+      e.altKey === currentModifiers.alt;
   }
 
   function isNewlineKey(e) {
     if (e.key !== 'Enter') return false;
-    if (currentSendKey === 'Default') return false;
+    if (isDefaultModifiers(currentModifiers)) return false;
     return !isSendKey(e);
   }
 
@@ -80,7 +91,7 @@
     if (e.key !== 'Enter') return;
     if (e.isComposing || e.keyCode === 229) return;
     if (!e.isTrusted) return;
-    if (currentSendKey === 'Default') return;
+    if (isDefaultModifiers(currentModifiers)) return;
 
     const service = getCurrentService();
     if (!service || !enabledServices[service]) return;
