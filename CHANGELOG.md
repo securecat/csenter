@@ -3,6 +3,16 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.4.0] - 2026-09-03
+
+### Added
+
+- Add Alt (Option on macOS) as a selectable send-key modifier, so any combination of Shift, Ctrl (Cmd), and Alt (Option) up to Shift+Ctrl+Alt+Enter can now be used to send messages
+
+### Changed
+
+- Replace the popup's four fixed send-key options with independent checkboxes for each modifier; checkbox labels and the current setting automatically match the detected OS (Ctrl/Alt on Windows, Command/Option on macOS)
+
 ## [1.3.1] - 2026-08-15
 
 ### Added
@@ -78,6 +88,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.4.0] - 2026-09-03
+
+### 追加
+
+- 送信キーの修飾キーとしてAlt（macOSではOption）を追加。Shift・Ctrl（Cmd）・Altを自由に組み合わせられるようになり、最大 Shift+Ctrl+Alt+Enter まで設定可能に
+
+### 変更
+
+- ポップアップの送信キー選択を、従来の4択ラジオボタンから、各修飾キーごとの独立したチェックボックス方式に変更。チェックボックスのラベルや現在の設定表示は、検出したOSに応じて自動的にWindows表記（Ctrl/Alt）とmacOS表記（Command/Option）を切り替える
 
 ## [1.3.1] - 2026-08-15
 

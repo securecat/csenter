@@ -29,19 +29,14 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 ## How to Use
 
 1. Click the extension icon to open the popup
-2. Select your preferred send key from the radio buttons
+2. Check any combination of Shift, Ctrl, and Alt to set the key combination that sends your message (on macOS these are shown as Shift, Command, and Option)
 3. Changes take effect immediately — no page reload required
 
 ## Options
 
-| Setting | Send | New Line |
-|---------|------|----------|
-| Default | Enter | Shift+Enter |
-| Ctrl+Enter | Ctrl+Enter | Enter / Shift+Enter / others |
-| Shift+Enter | Shift+Enter | Enter / Ctrl+Enter / others |
-| Ctrl+Shift+Enter | Ctrl+Shift+Enter | Enter / Shift+Enter / Ctrl+Enter / others |
+With no modifiers checked (default), Enter sends and Shift+Enter inserts a new line, following each service's own default behavior.
 
-On macOS, Ctrl functions as Cmd.
+Once you check one or more modifiers, that exact combination becomes the send key — pressing Enter alone, or Enter with any other combination, inserts a new line instead.
 
 ## IME Support
 
@@ -49,11 +44,15 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.3.1 — 2026-08-15
+### v1.4.0 — 2026-09-03
 
 #### Added
 
-- Work around a display bug in Google Search's AI Mode where the text caret doesn't appear on blank lines or at the end of a line
+- Add Alt (Option on macOS) as a selectable send-key modifier, so any combination of Shift, Ctrl (Cmd), and Alt (Option) up to Shift+Ctrl+Alt+Enter can now be used to send messages
+
+#### Changed
+
+- Replace the popup's four fixed send-key options with independent checkboxes for each modifier; checkbox labels and the current setting automatically match the detected OS (Ctrl/Alt on Windows, Command/Option on macOS)
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -90,19 +89,14 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 ## 使い方
 
 1. 拡張アイコンをクリックしてポップアップを開く
-2. ラジオボタンの選択肢からお好みのキーを選択
+2. Shift・Ctrl・Altのチェックボックスを組み合わせて、送信に使うキーの組み合わせを設定する（macOSではShift・Command・Optionと表示されます）
 3. 設定はリアルタイムで反映されます（リロード不要）
 
 ## 選択肢
 
-| 設定 | 送信 | 改行 |
-|------|------|------|
-| デフォルト | Enter | Shift+Enter |
-| Ctrl+Enter | Ctrl+Enter | Enter / Shift+Enter / その他 |
-| Shift+Enter | Shift+Enter | Enter / Ctrl+Enter / その他 |
-| Ctrl+Shift+Enter | Ctrl+Shift+Enter | Enter / Shift+Enter / Ctrl+Enter / その他 |
+何もチェックしていない場合（デフォルト）は、各サービス本来の挙動どおり Enter で送信、Shift+Enter で改行されます。
 
-macOSでは Ctrl を Cmd に読み替えてください。
+いずれかの修飾キーをチェックすると、そのキーの組み合わせだけが送信キーになります。Enter単体やそれ以外の組み合わせでは、代わりに改行が入力されます。
 
 ## IME対応
 
@@ -110,10 +104,14 @@ macOSでは Ctrl を Cmd に読み替えてください。
 
 ## 更新履歴
 
-### v1.3.1 — 2026-08-15
+### v1.4.0 — 2026-09-03
 
 #### 追加
 
-- Google検索のAIモード自体の表示不具合（改行のみの行や行末でキャレットが表示されない）を回避する処理を追加
+- 送信キーの修飾キーとしてAlt（macOSではOption）を追加。Shift・Ctrl（Cmd）・Altを自由に組み合わせられるようになり、最大 Shift+Ctrl+Alt+Enter まで設定可能に
+
+#### 変更
+
+- ポップアップの送信キー選択を、従来の4択ラジオボタンから、各修飾キーごとの独立したチェックボックス方式に変更。チェックボックスのラベルや現在の設定表示は、検出したOSに応じて自動的にWindows表記（Ctrl/Alt）とmacOS表記（Command/Option）を切り替える
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
