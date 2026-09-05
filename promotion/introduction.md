@@ -1,4 +1,4 @@
-Are you tired of accidentally sending an unfinished message just by pressing Enter?
+Have you ever accidentally sent a message you were in the middle of writing because you pressed the Enter key, intending to confirm the converted text?
 
 In many languages — especially those using IME-based input like Japanese — the Enter key is pressed frequently during text composition to confirm character conversions. This makes accidental sends an everyday frustration.
 
@@ -21,7 +21,7 @@ https://github.com/securecat/csenter
 
 ---
 
-Enterキーを押しただけで、書きかけのメッセージが送信されてしまった経験はありませんか？
+変換確定のつもりでEnterキーを押して、書きかけのメッセージが送信されてしまった経験はありませんか？
 
 日本語をはじめIMEを使用する言語圏では、文字変換の確定操作としてEnterキーを押す場面が多く、誤送信はよくある悩みのひとつです。
 
