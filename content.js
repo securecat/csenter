@@ -39,7 +39,7 @@
     }
   });
 
-  function getCurrentService() {
+  function getCurrentService(target) {
     const h = location.hostname;
     if (h === 'claude.ai') return 'claude';
     if (h === 'chatgpt.com') return 'chatgpt';
@@ -47,9 +47,14 @@
     if (h === 'www.google.com') return 'google';
     if (h === 'notebook.google.com') return 'notebook';
     if (h === 'copilot.com') return 'copilot';
-    // GitHubはIssue・PRのコメント欄などを除外するため、Copilotのページに限定する
-    // （ページ遷移でスクリプトが再注入されないことがあるため、manifestではなくここでパスを判定する）
-    if (h === 'github.com' && /^\/copilot(\/|$)/.test(location.pathname)) return 'github';
+    // GitHubはIssue・PRのコメント欄などを除外するため、Copilotのページと、
+    // ダッシュボード（github.com/）などにあるCopilotのチャット欄に限定する
+    // （ページ遷移でスクリプトが再注入されないことがあるため、manifestではなくここで判定する）
+    if (h === 'github.com') {
+      if (/^\/copilot(\/|$)/.test(location.pathname)) return 'github';
+      if (target.id === 'copilot-chat-textarea') return 'github';
+      return null;
+    }
     return null;
   }
 
@@ -99,7 +104,7 @@
     if (!e.isTrusted) return;
     if (isDefaultModifiers(currentModifiers)) return;
 
-    const service = getCurrentService();
+    const service = getCurrentService(e.target);
     if (!service || !enabledServices[service]) return;
 
     // comboboxロール（検索窓・コマンドパレットなど）は除外
