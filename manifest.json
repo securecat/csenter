@@ -25,7 +25,8 @@
         "https://claude.ai/*",
         "https://chatgpt.com/*",
         "https://gemini.google.com/*",
-        "https://www.google.com/search*"
+        "https://www.google.com/search*",
+        "https://notebook.google.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"

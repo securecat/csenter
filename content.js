@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -23,7 +23,8 @@
 
   chrome.storage.sync.get({ modifiers: null, sendKey: 'Default', services: DEFAULT_SERVICES }, ({ modifiers, sendKey, services }) => {
     currentModifiers = modifiers ?? legacySendKeyToModifiers(sendKey);
-    enabledServices = services;
+    // 保存済みの設定に後から追加したサービスのキーが無い場合は、デフォルト値で補う
+    enabledServices = { ...DEFAULT_SERVICES, ...services };
   });
 
   chrome.runtime.onMessage.addListener((message) => {
@@ -34,7 +35,7 @@
 
   chrome.storage.onChanged.addListener((changes) => {
     if (changes.services) {
-      enabledServices = changes.services.newValue;
+      enabledServices = { ...DEFAULT_SERVICES, ...changes.services.newValue };
     }
   });
 
@@ -44,6 +45,7 @@
     if (h === 'chatgpt.com') return 'chatgpt';
     if (h === 'gemini.google.com') return 'gemini';
     if (h === 'www.google.com') return 'google';
+    if (h === 'notebook.google.com') return 'notebook';
     return null;
   }
 
