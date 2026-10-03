@@ -7,6 +7,7 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - Claude (claude.ai)
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
+- Gemini Notebook (notebook.google.com)
 - AI Mode in Google Search (google.com/search)
 
 > Microsoft Copilot is not supported.
@@ -44,15 +45,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.4.0 — 2026-09-03
+### v1.5.0 — 2026-10-04
 
 #### Added
 
-- Add Alt (Option on macOS) as a selectable send-key modifier, so any combination of Shift, Ctrl (Cmd), and Alt (Option) up to Shift+Ctrl+Alt+Enter can now be used to send messages
-
-#### Changed
-
-- Replace the popup's four fixed send-key options with independent checkboxes for each modifier; checkbox labels and the current setting automatically match the detected OS (Ctrl/Alt on Windows, Command/Option on macOS)
+- Add support for Gemini Notebook (notebook.google.com), enabled by default and toggleable in the options page's Enabled services section
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -67,6 +64,7 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - Claude (claude.ai)
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
+- Gemini Notebook (notebook.google.com)
 - Google検索 AIモード (google.com/search)
 
 > Microsoft Copilot には対応していません。
@@ -104,14 +102,10 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.4.0 — 2026-09-03
+### v1.5.0 — 2026-10-04
 
 #### 追加
 
-- 送信キーの修飾キーとしてAlt（macOSではOption）を追加。Shift・Ctrl（Cmd）・Altを自由に組み合わせられるようになり、最大 Shift+Ctrl+Alt+Enter まで設定可能に
-
-#### 変更
-
-- ポップアップの送信キー選択を、従来の4択ラジオボタンから、各修飾キーごとの独立したチェックボックス方式に変更。チェックボックスのラベルや現在の設定表示は、検出したOSに応じて自動的にWindows表記（Ctrl/Alt）とmacOS表記（Command/Option）を切り替える
+- Gemini Notebook（notebook.google.com）に対応。初期状態で有効になっており、詳細設定の「有効なサービス」でオン・オフを切り替え可能
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。

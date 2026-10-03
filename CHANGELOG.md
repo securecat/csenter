@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.5.0] - 2026-10-04
+
+### Added
+
+- Add support for Gemini Notebook (notebook.google.com), enabled by default and toggleable in the options page's Enabled services section
+
 ## [1.4.0] - 2026-09-03
 
 ### Added
@@ -88,6 +94,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.5.0] - 2026-10-04
+
+### 追加
+
+- Gemini Notebook（notebook.google.com）に対応。初期状態で有効になっており、詳細設定の「有効なサービス」でオン・オフを切り替え可能
 
 ## [1.4.0] - 2026-09-03
 
