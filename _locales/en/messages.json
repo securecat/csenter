@@ -42,6 +42,9 @@
   "optionsServiceNotebook": {
     "message": "Gemini Notebook (notebook.google.com)"
   },
+  "optionsServiceCopilot": {
+    "message": "Microsoft Copilot (copilot.com)"
+  },
   "optionsServiceGoogle": {
     "message": "AI Mode in Google Search (google.com/search)"
   },
