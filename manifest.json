@@ -26,7 +26,8 @@
         "https://chatgpt.com/*",
         "https://gemini.google.com/*",
         "https://www.google.com/search*",
-        "https://notebook.google.com/*"
+        "https://notebook.google.com/*",
+        "https://copilot.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"

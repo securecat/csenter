@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -46,6 +46,7 @@
     if (h === 'gemini.google.com') return 'gemini';
     if (h === 'www.google.com') return 'google';
     if (h === 'notebook.google.com') return 'notebook';
+    if (h === 'copilot.com') return 'copilot';
     return null;
   }
 
