@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Change the send trigger key in AI chat services like Claude, ChatGPT, Gemini, and AI Mode in Google Search.",
+    "message": "Change the send trigger key in AI chat services like Claude, ChatGPT, Gemini, Gemini Notebook, and AI Mode in Google Search.",
     "description": "Extension description shown in the Chrome Web Store and on the extensions page."
   },
   "popupTitle": {
@@ -38,6 +38,9 @@
   },
   "optionsServiceGemini": {
     "message": "Gemini (gemini.google.com)"
+  },
+  "optionsServiceNotebook": {
+    "message": "Gemini Notebook (notebook.google.com)"
   },
   "optionsServiceGoogle": {
     "message": "AI Mode in Google Search (google.com/search)"

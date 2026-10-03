@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Claude、ChatGPT、Gemini、Google検索のAIモードで、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。",
+    "message": "Claude、ChatGPT、Gemini、Gemini Notebook、Google検索のAIモードで、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。",
     "description": "Chromeウェブストアおよび拡張機能ページに表示される説明文。"
   },
   "popupTitle": {
@@ -38,6 +38,9 @@
   },
   "optionsServiceGemini": {
     "message": "Gemini (gemini.google.com)"
+  },
+  "optionsServiceNotebook": {
+    "message": "Gemini Notebook (notebook.google.com)"
   },
   "optionsServiceGoogle": {
     "message": "Google検索のAIモード (google.com/search)"
