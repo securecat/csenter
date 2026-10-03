@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -47,6 +47,9 @@
     if (h === 'www.google.com') return 'google';
     if (h === 'notebook.google.com') return 'notebook';
     if (h === 'copilot.com') return 'copilot';
+    // GitHubはIssue・PRのコメント欄などを除外するため、Copilotのページに限定する
+    // （ページ遷移でスクリプトが再注入されないことがあるため、manifestではなくここでパスを判定する）
+    if (h === 'github.com' && /^\/copilot(\/|$)/.test(location.pathname)) return 'github';
     return null;
   }
 

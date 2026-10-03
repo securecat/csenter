@@ -27,7 +27,8 @@
         "https://gemini.google.com/*",
         "https://www.google.com/search*",
         "https://notebook.google.com/*",
-        "https://copilot.com/*"
+        "https://copilot.com/*",
+        "https://github.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"

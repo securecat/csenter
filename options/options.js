@@ -1,5 +1,5 @@
-const SERVICE_KEYS = ['claude', 'chatgpt', 'gemini', 'notebook', 'copilot', 'google'];
-const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, notebook: true, copilot: true, google: true };
+const SERVICE_KEYS = ['claude', 'chatgpt', 'gemini', 'notebook', 'copilot', 'github', 'google'];
+const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, notebook: true, copilot: true, github: true, google: true };
 const UI_LANGUAGES = ['en', 'ja'];
 
 const checkboxes = Object.fromEntries(

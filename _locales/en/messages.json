@@ -45,6 +45,9 @@
   "optionsServiceCopilot": {
     "message": "Microsoft Copilot (copilot.com)"
   },
+  "optionsServiceGithub": {
+    "message": "GitHub Copilot (github.com/copilot)"
+  },
   "optionsServiceGoogle": {
     "message": "AI Mode in Google Search (google.com/search)"
   },
