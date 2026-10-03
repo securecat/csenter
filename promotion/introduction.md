@@ -1,3 +1,6 @@
+Change the send trigger key in AI chat services like Claude, ChatGPT, Gemini, Gemini Notebook, and AI Mode in Google Search.
+
+
 Have you ever accidentally sent a message you were in the middle of writing because you pressed the Enter key, intending to confirm the converted text?
 
 In many languages — especially those using IME-based input like Japanese — the Enter key is pressed frequently during text composition to confirm character conversions. This makes accidental sends an everyday frustration.
@@ -14,12 +17,15 @@ Key features:
 - Saves time and avoids wasting conversation context
 - Settings apply instantly — no page reload needed
 - Settings are synced across devices via your browser account
-- Supports Claude, ChatGPT, Gemini, and AI Mode in Google Search
+- Supports Claude, ChatGPT, Gemini, Gemini Notebook, and AI Mode in Google Search
 
 Source code and changelog are available on GitHub:
 https://github.com/securecat/csenter
 
 ---
+
+Claude、ChatGPT、Gemini、Gemini Notebook、Google検索のAIモードで、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。
+
 
 変換確定のつもりでEnterキーを押して、書きかけのメッセージが送信されてしまった経験はありませんか？
 
@@ -37,7 +43,7 @@ CSEnter for AI Chat は、送信に使う修飾キーをご自身で追加でき
 - 無駄なコンテキスト消費・時間の浪費を回避
 - 設定はリロード不要でリアルタイムに反映
 - 設定はブラウザアカウントに同期保存されます
-- Claude・ChatGPT・Gemini・Google検索 AIモードに対応
+- Claude・ChatGPT・Gemini・Gemini Notebook・Google検索 AIモードに対応
 
 ソースコードおよび更新履歴はGitHubで公開しています：
 https://github.com/securecat/csenter
