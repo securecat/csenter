@@ -32,11 +32,6 @@
       ],
       "js": ["content.js"],
       "run_at": "document_idle"
-    },
-    {
-      "matches": ["https://www.google.com/search*"],
-      "css": ["google-caret-fix.css"],
-      "run_at": "document_idle"
     }
   ],
   "options_page": "options/options.html",
