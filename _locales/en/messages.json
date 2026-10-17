@@ -55,6 +55,6 @@
     "message": "UI Language"
   },
   "optionsBugReportHtml": {
-    "message": "Found a bug? Report it on <a href=\"https://github.com/securecat/csenter/issues\" target=\"_blank\" rel=\"noopener\">GitHub Issues</a>."
+    "message": "Found a bug? Report it on <a href=\"https://github.com/securecat/csenter/issues\" target=\"_blank\">GitHub Issues</a>."
   }
 }

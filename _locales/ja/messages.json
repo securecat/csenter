@@ -55,6 +55,6 @@
     "message": "UI言語"
   },
   "optionsBugReportHtml": {
-    "message": "バグを見つけたら、<a href=\"https://github.com/securecat/csenter/issues\" target=\"_blank\" rel=\"noopener\">GitHub Issues</a> へ報告してください。"
+    "message": "バグを見つけたら、<a href=\"https://github.com/securecat/csenter/issues\" target=\"_blank\">GitHub Issues</a> へ報告してください。"
   }
 }
