@@ -8,9 +8,9 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
 - Gemini Notebook (notebook.google.com)
+- Microsoft Copilot (copilot.com)
+- GitHub Copilot (github.com/copilot, and the Copilot chat input on the dashboard and in the side panel)
 - AI Mode in Google Search (google.com/search)
-
-> Microsoft Copilot is not supported.
 
 ## Installation
 
@@ -45,11 +45,23 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.5.0 — 2026-10-04
+### v1.6.0 — 2026-10-17
 
 #### Added
 
-- Add support for Gemini Notebook (notebook.google.com), enabled by default and toggleable in the options page's Enabled services section
+- Add support for Microsoft Copilot (copilot.com), enabled by default and toggleable in the options page's Enabled services section
+- Add support for GitHub Copilot, covering the Copilot pages (github.com/copilot) and the Copilot chat input on other GitHub pages such as the dashboard and the side panel; enabled by default and toggleable in the options page. Comment fields in issues and pull requests keep GitHub's own behavior
+
+#### Changed
+
+- Describe the supported services in the extension description as "major AI chat services" instead of listing them all; the full list is in this README
+- Write the `<meta charset>` declaration in lowercase (`utf-8`) in the popup and options pages, following the HTML Standard
+- Remove the trailing slashes from void elements (`<meta>`, `<input>`) in the popup and options pages
+- Remove `rel="noopener"` from the bug report link on the options page, since browsers already treat `target="_blank"` links as noopener
+
+#### Removed
+
+- Remove the workaround for the missing text caret in Google Search's AI Mode (`google-caret-fix.css`), as Google has fixed the issue
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -65,9 +77,9 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
 - Gemini Notebook (notebook.google.com)
+- Microsoft Copilot (copilot.com)
+- GitHub Copilot（github.com/copilot、およびダッシュボードやサイドパネルのCopilotチャット欄）
 - Google検索 AIモード (google.com/search)
-
-> Microsoft Copilot には対応していません。
 
 ## インストール
 
@@ -102,10 +114,22 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.5.0 — 2026-10-04
+### v1.6.0 — 2026-10-17
 
 #### 追加
 
-- Gemini Notebook（notebook.google.com）に対応。初期状態で有効になっており、詳細設定の「有効なサービス」でオン・オフを切り替え可能
+- Microsoft Copilot（copilot.com）に対応。初期状態で有効になっており、詳細設定の「有効なサービス」でオン・オフを切り替え可能
+- GitHub Copilot に対応。Copilotのページ（github.com/copilot）と、ダッシュボードやサイドパネルなど他のページにあるCopilotのチャット欄で動作する。初期状態で有効になっており、詳細設定でオン・オフを切り替え可能。IssueやPull Requestのコメント欄は、GitHub本来の挙動のまま
+
+#### 変更
+
+- 拡張機能の説明文で、対応サービスを全て列挙するのをやめ、「主要なAIチャットサービス」と表現するように変更（全サービスの一覧はこのREADMEに掲載）
+- ポップアップと詳細設定ページの `<meta charset>` を、HTML Standard にならって小文字（`utf-8`）に変更
+- ポップアップと詳細設定ページの空要素（`<meta>`・`<input>`）から、末尾のスラッシュを削除
+- 詳細設定ページのバグ報告リンクから `rel="noopener"` を削除（`target="_blank"` のリンクは、ブラウザが既定で noopener として扱うため）
+
+#### 削除
+
+- Google検索のAIモードで、テキストキャレットが表示されない不具合への回避策（`google-caret-fix.css`）を削除。Google側で修正されたため
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
