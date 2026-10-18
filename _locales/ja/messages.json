@@ -49,6 +49,9 @@
     "message": "GitHub Copilot (github.com/copilot)"
   },
   "optionsServiceGrok": {
+    "message": "Grok (grok.com)"
+  },
+  "optionsServiceGrokx": {
     "message": "Grok (x.com)"
   },
   "optionsServiceGoogle": {

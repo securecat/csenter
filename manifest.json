@@ -29,6 +29,7 @@
         "https://notebook.google.com/*",
         "https://copilot.com/*",
         "https://github.com/*",
+        "https://grok.com/*",
         "https://x.com/*"
       ],
       "js": ["content.js"],

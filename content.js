@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -55,12 +55,13 @@
       if (target.id === 'copilot-chat-textarea') return 'github';
       return null;
     }
+    if (h === 'grok.com') return 'grok';
     // Xはポストの入力欄などを除外するため、Grokのページと、ポストのGrokボタンで開く
     // チャット欄に限定する（判定はGitHubと同じ理由でここで行う）。
     // Grokの入力欄はLexicalエディタ、ポストの入力欄はDraft.jsなので、Lexicalかどうかで見分ける
     if (h === 'x.com') {
-      if (/^\/i\/grok(\/|$)/.test(location.pathname)) return 'grok';
-      if (target.dataset?.lexicalEditor === 'true') return 'grok';
+      if (/^\/i\/grok(\/|$)/.test(location.pathname)) return 'grokx';
+      if (target.dataset?.lexicalEditor === 'true') return 'grokx';
       return null;
     }
     return null;
