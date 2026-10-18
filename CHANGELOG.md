@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Add Grok to the services named in the extension description
+- Replace AI Mode in Google Search with Grok among the services named in the extension description
 
 ## [1.6.0] - 2026-10-17
 
@@ -133,7 +133,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### 変更
 
-- 拡張機能の説明文で例示するサービスに、Grokを追加
+- 拡張機能の説明文で例示するサービスを、Google検索のAIモードからGrokに差し替え
 
 ## [1.6.0] - 2026-10-17
 

@@ -56,7 +56,7 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 #### Changed
 
-- Add Grok to the services named in the extension description
+- Replace AI Mode in Google Search with Grok among the services named in the extension description
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -120,6 +120,6 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 #### 変更
 
-- 拡張機能の説明文で例示するサービスに、Grokを追加
+- 拡張機能の説明文で例示するサービスを、Google検索のAIモードからGrokに差し替え
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
