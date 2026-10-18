@@ -7,8 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- Add support for Microsoft Copilot (copilot.com), enabled by default and toggleable in the options page's Enabled services section
-- Add support for GitHub Copilot, covering the Copilot pages (github.com/copilot) and the Copilot chat input on other GitHub pages such as the dashboard and the side panel; enabled by default and toggleable in the options page. Comment fields in issues and pull requests keep GitHub's own behavior
+- Add support for Microsoft Copilot (copilot.com), toggleable in the options page's Enabled services section
+- Add support for GitHub Copilot, covering the Copilot pages (github.com/copilot) and the Copilot chat input on other GitHub pages such as the dashboard and the side panel; toggleable in the options page. Comment fields in issues and pull requests keep GitHub's own behavior
 
 ### Changed
 
@@ -25,7 +25,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-- Add support for Gemini Notebook (notebook.google.com), enabled by default and toggleable in the options page's Enabled services section
+- Add support for Gemini Notebook (notebook.google.com), toggleable in the options page's Enabled services section
 
 ## [1.4.0] - 2026-09-03
 
@@ -117,8 +117,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### 追加
 
-- Microsoft Copilot（copilot.com）に対応。初期状態で有効になっており、詳細設定の「有効なサービス」でオン・オフを切り替え可能
-- GitHub Copilot に対応。Copilotのページ（github.com/copilot）と、ダッシュボードやサイドパネルなど他のページにあるCopilotのチャット欄で動作する。初期状態で有効になっており、詳細設定でオン・オフを切り替え可能。IssueやPull Requestのコメント欄は、GitHub本来の挙動のまま
+- Microsoft Copilot（copilot.com）に対応。詳細設定の「有効なサービス」でオン・オフを切り替え可能
+- GitHub Copilot に対応。Copilotのページ（github.com/copilot）と、ダッシュボードやサイドパネルなど他のページにあるCopilotのチャット欄で動作する。詳細設定でオン・オフを切り替え可能。IssueやPull Requestのコメント欄は、GitHub本来の挙動のまま
 
 ### 変更
 
@@ -135,7 +135,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### 追加
 
-- Gemini Notebook（notebook.google.com）に対応。初期状態で有効になっており、詳細設定の「有効なサービス」でオン・オフを切り替え可能
+- Gemini Notebook（notebook.google.com）に対応。詳細設定の「有効なサービス」でオン・オフを切り替え可能
 
 ## [1.4.0] - 2026-09-03
 
