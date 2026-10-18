@@ -17,7 +17,7 @@ Key features:
 - Saves time and avoids wasting conversation context
 - Settings apply instantly — no page reload needed
 - Settings are synced across devices via your browser account
-- Supports major AI chat services.
+- Supports major AI chat services
 
 Source code, the full list of supported services, and the changelog are available on GitHub:
 https://github.com/securecat/csenter
