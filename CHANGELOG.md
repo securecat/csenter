@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.7.1] - 2026-10-18
+
+### Changed
+
+- Shorten the extension description and drop AI Mode in Google Search from the services it names
+
 ## [1.7.0] - 2026-10-18
 
 ### Added
@@ -12,7 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Changed
 
-- Shorten the extension description and replace AI Mode in Google Search with Grok among the services it names
+- Add Grok to the services named in the extension description
 
 ## [1.6.0] - 2026-10-17
 
@@ -124,6 +130,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 # 更新履歴
 
+## [1.7.1] - 2026-10-18
+
+### 変更
+
+- 拡張機能の説明文を短くし、例示するサービスからGoogle検索のAIモードを削除
+
 ## [1.7.0] - 2026-10-18
 
 ### 追加
@@ -133,7 +145,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### 変更
 
-- 拡張機能の説明文を短くし、例示するサービスをGoogle検索のAIモードからGrokに差し替え
+- 拡張機能の説明文で例示するサービスに、Grokを追加
 
 ## [1.6.0] - 2026-10-17
 

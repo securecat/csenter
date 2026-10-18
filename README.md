@@ -47,16 +47,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.7.0 — 2026-10-18
-
-#### Added
-
-- Add support for Grok (grok.com)
-- Add support for Grok on X, covering the Grok page (x.com/i/grok) and the Grok chat window opened from the Grok button on posts
+### v1.7.1 — 2026-10-18
 
 #### Changed
 
-- Shorten the extension description and replace AI Mode in Google Search with Grok among the services it names
+- Shorten the extension description and drop AI Mode in Google Search from the services it names
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -111,15 +106,10 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.7.0 — 2026-10-18
-
-#### 追加
-
-- Grok（grok.com）に対応
-- X の Grok に対応。Grokのページ（x.com/i/grok）と、ポストのGrokボタンで開くチャット欄で動作する
+### v1.7.1 — 2026-10-18
 
 #### 変更
 
-- 拡張機能の説明文を短くし、例示するサービスをGoogle検索のAIモードからGrokに差し替え
+- 拡張機能の説明文を短くし、例示するサービスからGoogle検索のAIモードを削除
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
