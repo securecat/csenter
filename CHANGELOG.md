@@ -8,14 +8,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Add support for Grok (grok.com)
-- Add support for Grok on X, covering the Grok page (x.com/i/grok) and the Grok chat window opened from the Grok button on posts. Post inputs keep X's own behavior
+- Add support for Grok on X, covering the Grok page (x.com/i/grok) and the Grok chat window opened from the Grok button on posts
 
 ## [1.6.0] - 2026-10-17
 
 ### Added
 
 - Add support for Microsoft Copilot (copilot.com)
-- Add support for GitHub Copilot, covering the Copilot pages (github.com/copilot) and the Copilot chat input on other GitHub pages such as the dashboard and the side panel. Comment fields in issues and pull requests keep GitHub's own behavior
+- Add support for GitHub Copilot, covering the Copilot pages (github.com/copilot) and the Copilot chat input on other GitHub pages such as the dashboard and the side panel
 
 ### Changed
 
@@ -125,14 +125,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### 追加
 
 - Grok（grok.com）に対応
-- X の Grok に対応。Grokのページ（x.com/i/grok）と、ポストのGrokボタンで開くチャット欄で動作する。ポストの入力欄は、X本来の挙動のまま
+- X の Grok に対応。Grokのページ（x.com/i/grok）と、ポストのGrokボタンで開くチャット欄で動作する
 
 ## [1.6.0] - 2026-10-17
 
 ### 追加
 
 - Microsoft Copilot（copilot.com）に対応
-- GitHub Copilot に対応。Copilotのページ（github.com/copilot）と、ダッシュボードやサイドパネルなど他のページにあるCopilotのチャット欄で動作する。IssueやPull Requestのコメント欄は、GitHub本来の挙動のまま
+- GitHub Copilot に対応。Copilotのページ（github.com/copilot）と、ダッシュボードやサイドパネルなど他のページにあるCopilotのチャット欄で動作する
 
 ### 変更
 
