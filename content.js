@@ -55,8 +55,14 @@
       if (target.id === 'copilot-chat-textarea') return 'github';
       return null;
     }
-    // XはポストやDMの入力欄などを除外するため、Grokのページに限定する（判定はGitHubと同じ理由でここで行う）
-    if (h === 'x.com' && /^\/i\/grok(\/|$)/.test(location.pathname)) return 'grok';
+    // Xはポストの入力欄などを除外するため、Grokのページと、ポストのGrokボタンで開く
+    // チャット欄に限定する（判定はGitHubと同じ理由でここで行う）。
+    // Grokの入力欄はLexicalエディタ、ポストの入力欄はDraft.jsなので、Lexicalかどうかで見分ける
+    if (h === 'x.com') {
+      if (/^\/i\/grok(\/|$)/.test(location.pathname)) return 'grok';
+      if (target.dataset?.lexicalEditor === 'true') return 'grok';
+      return null;
+    }
     return null;
   }
 
