@@ -10,6 +10,8 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - Gemini Notebook (notebook.google.com)
 - Microsoft Copilot (copilot.com)
 - GitHub Copilot (github.com/copilot, and the Copilot chat input on the dashboard and in the side panel)
+- Grok (grok.com)
+- Grok on X (x.com/i/grok, and the Grok chat window opened from posts)
 - AI Mode in Google Search (google.com/search)
 
 ## Installation
@@ -45,23 +47,12 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.6.0 — 2026-10-17
+### v1.7.0 — 2026-10-18
 
 #### Added
 
-- Add support for Microsoft Copilot (copilot.com)
-- Add support for GitHub Copilot, covering the Copilot pages (github.com/copilot) and the Copilot chat input on other GitHub pages such as the dashboard and the side panel. Comment fields in issues and pull requests keep GitHub's own behavior
-
-#### Changed
-
-- Describe the supported services in the extension description as "major AI chat services" instead of listing them all; the full list is in this README
-- Write the `<meta charset>` declaration in lowercase (`utf-8`) in the popup and options pages, following the HTML Standard
-- Remove the trailing slashes from void elements (`<meta>`, `<input>`) in the popup and options pages
-- Remove `rel="noopener"` from the bug report link on the options page, since browsers already treat `target="_blank"` links as noopener
-
-#### Removed
-
-- Remove the workaround for the missing text caret in Google Search's AI Mode (`google-caret-fix.css`), as Google has fixed the issue
+- Add support for Grok (grok.com)
+- Add support for Grok on X, covering the Grok page (x.com/i/grok) and the Grok chat window opened from the Grok button on posts. Post inputs keep X's own behavior
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -79,6 +70,8 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - Gemini Notebook (notebook.google.com)
 - Microsoft Copilot (copilot.com)
 - GitHub Copilot（github.com/copilot、およびダッシュボードやサイドパネルのCopilotチャット欄）
+- Grok (grok.com)
+- X の Grok（x.com/i/grok、およびポストのGrokボタンで開くチャット欄）
 - Google検索 AIモード (google.com/search)
 
 ## インストール
@@ -114,22 +107,11 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.6.0 — 2026-10-17
+### v1.7.0 — 2026-10-18
 
 #### 追加
 
-- Microsoft Copilot（copilot.com）に対応
-- GitHub Copilot に対応。Copilotのページ（github.com/copilot）と、ダッシュボードやサイドパネルなど他のページにあるCopilotのチャット欄で動作する。IssueやPull Requestのコメント欄は、GitHub本来の挙動のまま
-
-#### 変更
-
-- 拡張機能の説明文で、対応サービスを全て列挙するのをやめ、「主要なAIチャットサービス」と表現するように変更（全サービスの一覧はこのREADMEに掲載）
-- ポップアップと詳細設定ページの `<meta charset>` を、HTML Standard にならって小文字（`utf-8`）に変更
-- ポップアップと詳細設定ページの空要素（`<meta>`・`<input>`）から、末尾のスラッシュを削除
-- 詳細設定ページのバグ報告リンクから `rel="noopener"` を削除（`target="_blank"` のリンクは、ブラウザが既定で noopener として扱うため）
-
-#### 削除
-
-- Google検索のAIモードで、テキストキャレットが表示されない不具合への回避策（`google-caret-fix.css`）を削除。Google側で修正されたため
+- Grok（grok.com）に対応
+- X の Grok に対応。Grokのページ（x.com/i/grok）と、ポストのGrokボタンで開くチャット欄で動作する。ポストの入力欄は、X本来の挙動のまま
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。

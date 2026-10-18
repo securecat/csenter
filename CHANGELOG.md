@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.7.0] - 2026-10-18
+
+### Added
+
+- Add support for Grok (grok.com)
+- Add support for Grok on X, covering the Grok page (x.com/i/grok) and the Grok chat window opened from the Grok button on posts. Post inputs keep X's own behavior
+
 ## [1.6.0] - 2026-10-17
 
 ### Added
@@ -112,6 +119,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.7.0] - 2026-10-18
+
+### 追加
+
+- Grok（grok.com）に対応
+- X の Grok に対応。Grokのページ（x.com/i/grok）と、ポストのGrokボタンで開くチャット欄で動作する。ポストの入力欄は、X本来の挙動のまま
 
 ## [1.6.0] - 2026-10-17
 
