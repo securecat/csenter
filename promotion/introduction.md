@@ -1,4 +1,4 @@
-Change the send trigger key in major AI chat services (Claude, ChatGPT, Gemini, Copilot, Grok, AI Mode in Google Search, and more).
+Change the send trigger key in Claude, ChatGPT, Gemini, Copilot, Grok, etc.
 
 
 Have you ever accidentally sent a message you were in the middle of writing because you pressed the Enter key, intending to confirm the converted text?
@@ -24,7 +24,7 @@ https://github.com/securecat/csenter
 
 ---
 
-主要なAIチャットサービス（Claude、ChatGPT、Gemini、Copilot、Grok、Google検索のAIモード等）で、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。
+Claude、ChatGPT、Gemini、Copilot、Grok等で、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。
 
 
 変換確定のつもりでEnterキーを押して、書きかけのメッセージが送信されてしまった経験はありませんか？
