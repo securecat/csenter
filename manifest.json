@@ -28,7 +28,8 @@
         "https://www.google.com/search*",
         "https://notebook.google.com/*",
         "https://copilot.com/*",
-        "https://github.com/*"
+        "https://github.com/*",
+        "https://x.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"

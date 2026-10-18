@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -55,6 +55,8 @@
       if (target.id === 'copilot-chat-textarea') return 'github';
       return null;
     }
+    // XはポストやDMの入力欄などを除外するため、Grokのページに限定する（判定はGitHubと同じ理由でここで行う）
+    if (h === 'x.com' && /^\/i\/grok(\/|$)/.test(location.pathname)) return 'grok';
     return null;
   }
 
