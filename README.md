@@ -54,6 +54,10 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 - Add support for Grok (grok.com)
 - Add support for Grok on X, covering the Grok page (x.com/i/grok) and the Grok chat window opened from the Grok button on posts
 
+#### Changed
+
+- Add Grok to the services named in the extension description
+
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
 ---
@@ -113,5 +117,9 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 - Grok（grok.com）に対応
 - X の Grok に対応。Grokのページ（x.com/i/grok）と、ポストのGrokボタンで開くチャット欄で動作する
+
+#### 変更
+
+- 拡張機能の説明文で例示するサービスに、Grokを追加
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。

@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "主要なAIチャットサービス（Claude、ChatGPT、Gemini、Copilot、Google検索のAIモード等）で、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。",
+    "message": "主要なAIチャットサービス（Claude、ChatGPT、Gemini、Copilot、Grok、Google検索のAIモード等）で、Enterキー単体での送信をCtrlやShiftとの組み合わせに変更できます。",
     "description": "Chromeウェブストアおよび拡張機能ページに表示される説明文。"
   },
   "popupTitle": {

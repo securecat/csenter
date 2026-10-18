@@ -10,6 +10,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Add support for Grok (grok.com)
 - Add support for Grok on X, covering the Grok page (x.com/i/grok) and the Grok chat window opened from the Grok button on posts
 
+### Changed
+
+- Add Grok to the services named in the extension description
+
 ## [1.6.0] - 2026-10-17
 
 ### Added
@@ -126,6 +130,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 - Grok（grok.com）に対応
 - X の Grok に対応。Grokのページ（x.com/i/grok）と、ポストのGrokボタンで開くチャット欄で動作する
+
+### 変更
+
+- 拡張機能の説明文で例示するサービスに、Grokを追加
 
 ## [1.6.0] - 2026-10-17
 

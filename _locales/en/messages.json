@@ -1,6 +1,6 @@
 {
   "extensionDescription": {
-    "message": "Change the send trigger key in major AI chat services (Claude, ChatGPT, Gemini, Copilot, AI Mode in Google Search, and more).",
+    "message": "Change the send trigger key in major AI chat services (Claude, ChatGPT, Gemini, Copilot, Grok, AI Mode in Google Search, and more).",
     "description": "Extension description shown in the Chrome Web Store and on the extensions page."
   },
   "popupTitle": {
