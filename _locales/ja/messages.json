@@ -48,6 +48,9 @@
   "optionsServiceGithub": {
     "message": "GitHub Copilot (github.com/copilot)"
   },
+  "optionsServiceGrok": {
+    "message": "Grok (x.com)"
+  },
   "optionsServiceGoogle": {
     "message": "Google検索のAIモード (google.com/search)"
   },
