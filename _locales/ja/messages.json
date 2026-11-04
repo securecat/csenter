@@ -54,6 +54,9 @@
   "optionsServiceGrokx": {
     "message": "Grok (x.com)"
   },
+  "optionsServiceMuse": {
+    "message": "Muse (muse.ai)"
+  },
   "optionsServiceGoogle": {
     "message": "Google検索のAIモード (google.com/search)"
   },

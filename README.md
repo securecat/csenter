@@ -12,6 +12,7 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - GitHub Copilot (github.com/copilot, and the Copilot chat input on the dashboard and in the side panel)
 - Grok (grok.com)
 - Grok on X (x.com/i/grok, and the Grok chat window opened from posts)
+- Muse (muse.ai)
 - AI Mode in Google Search (google.com/search)
 
 ## Installation
@@ -71,6 +72,7 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - GitHub Copilot（github.com/copilot、およびダッシュボードやサイドパネルのCopilotチャット欄）
 - Grok (grok.com)
 - X の Grok（x.com/i/grok、およびポストのGrokボタンで開くチャット欄）
+- Muse (muse.ai)
 - Google検索 AIモード (google.com/search)
 
 ## インストール
