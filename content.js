@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -64,6 +64,7 @@
       if (target.dataset?.lexicalEditor === 'true') return 'grokx';
       return null;
     }
+    if (h === 'muse.ai') return 'muse';
     return null;
   }
 

@@ -30,7 +30,8 @@
         "https://copilot.com/*",
         "https://github.com/*",
         "https://grok.com/*",
-        "https://x.com/*"
+        "https://x.com/*",
+        "https://muse.ai/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"
