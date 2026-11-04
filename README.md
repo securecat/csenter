@@ -48,11 +48,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.7.1 — 2026-10-18
+### v1.8.0 — 2026-11-05
 
-#### Changed
+#### Added
 
-- Shorten the extension description and drop AI Mode in Google Search from the services it names
+- Add support for Muse (muse.ai)
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -108,10 +108,10 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.7.1 — 2026-10-18
+### v1.8.0 — 2026-11-05
 
-#### 変更
+#### 追加
 
-- 拡張機能の説明文を短くし、例示するサービスからGoogle検索のAIモードを削除
+- Muse（muse.ai）に対応
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。

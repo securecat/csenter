@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.8.0] - 2026-11-05
+
+### Added
+
+- Add support for Muse (muse.ai)
+
 ## [1.7.1] - 2026-10-18
 
 ### Changed
@@ -129,6 +135,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.8.0] - 2026-11-05
+
+### 追加
+
+- Muse（muse.ai）に対応
 
 ## [1.7.1] - 2026-10-18
 
