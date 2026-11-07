@@ -56,7 +56,7 @@ CSEnter is developed by an individual, so we can't promise a deadline for replie
 - We will reply on the issue once we've seen your report
 - If there is a workaround, we will share it
 - Before releasing a fix, we may ask you to confirm that it works for you
-- Fixes are recorded in [CHANGELOG.md](CHANGELOG.md)
+- Fixes are recorded in [CHANGELOG.md](../CHANGELOG.md)
 
 ## Contributor Expectations
 
@@ -96,7 +96,7 @@ Suggestions about this statement or our approach to accessibility are also welco
 
 ## 優先事項と目標
 
-CSEnter for AI Chat は、それ自体がアクセシビリティのための道具です。多くのAIチャットサービスでは、Enterキー単体でメッセージが送信されます。そのため、IMEで変換を確定しようとしてEnterを押したときや、上肢障害や振戦（ふるえ）のある方が意図せずEnterに触れたときに、書きかけのメッセージが送信されてしまいます。CSEnter は、送信に修飾キーとの組み合わせを求めることで、こうした誤送信を防ぎます。
+CSEnter for AI Chat は、それ自体がアクセシビリティのための道具です。多くのAIチャットサービスでは、Enterキー単体でメッセージが送信されます。そのため、IMEで変換を確定しようとしてEnterを押したときや、上肢障害や振動障害のある方が意図せずEnterに触れたときに、書きかけのメッセージが送信されてしまいます。CSEnter は、送信に修飾キーとの組み合わせを求めることで、こうした誤送信を防ぎます。
 
 この文書が対象とするのは、次の2つです。
 
@@ -148,7 +148,7 @@ CSEnter は個人で開発しているため、返信や修正の期限はお約
 - 報告を確認したら、Issue で返信します
 - 回避策があれば、お知らせします
 - 修正をリリースする前に、問題が解消したかどうかの確認をお願いすることがあります
-- 修正の内容は [CHANGELOG.md](CHANGELOG.md) に記載します
+- 修正の内容は [CHANGELOG.md](../CHANGELOG.md) に記載します
 
 ## 貢献者への期待
 
