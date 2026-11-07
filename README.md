@@ -13,6 +13,7 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - Grok (grok.com)
 - Grok on X (x.com/i/grok, and the Grok chat window opened from posts)
 - Muse (muse.ai)
+- FigJam AI chat (the AI chat window on figma.com/board)
 - AI Mode in Google Search (google.com/search)
 
 ## Installation
@@ -73,6 +74,7 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - Grok (grok.com)
 - X の Grok（x.com/i/grok、およびポストのGrokボタンで開くチャット欄）
 - Muse (muse.ai)
+- FigJam の AIチャット（figma.com/board のAIチャット欄）
 - Google検索 AIモード (google.com/search)
 
 ## インストール

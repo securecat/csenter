@@ -57,6 +57,9 @@
   "optionsServiceMuse": {
     "message": "Muse (muse.ai)"
   },
+  "optionsServiceFigjam": {
+    "message": "FigJam AI chat (figma.com/board)"
+  },
   "optionsServiceGoogle": {
     "message": "AI Mode in Google Search (google.com/search)"
   },

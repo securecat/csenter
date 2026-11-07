@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true, figjam: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -65,6 +65,13 @@
       return null;
     }
     if (h === 'muse.ai') return 'muse';
+    // FigmaはキャンバスやテキストツールでもEnterを使うため、FigJamのボード上の
+    // AIチャット欄（Lexicalエディタ）に限定する（判定はGitHubと同じ理由でここで行う）
+    if (h === 'www.figma.com') {
+      if (!/^\/board\//.test(location.pathname)) return null;
+      if (target.dataset?.testid === 'code-chat-chat-box') return 'figjam';
+      return null;
+    }
     return null;
   }
 
