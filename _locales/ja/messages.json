@@ -58,7 +58,7 @@
     "message": "Muse (muse.ai)"
   },
   "optionsServiceFigma": {
-    "message": "FigmaのAIチャット (FigJam、Figma Design、Figma Make)"
+    "message": "FigmaのAIチャット (FigJam、Figma Design、Figma Make、Figma Slides)"
   },
   "optionsServiceGoogle": {
     "message": "Google検索のAIモード (google.com/search)"

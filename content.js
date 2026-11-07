@@ -66,10 +66,10 @@
     }
     if (h === 'muse.ai') return 'muse';
     // FigmaはキャンバスやテキストツールでもEnterを使うため、FigJam（/board/）・
-    // Figma Design（/design/）・Figma Make（/make/）のAIチャット欄（Lexicalエディタ）に
-    // 限定する（判定はGitHubと同じ理由でここで行う）
+    // Figma Design（/design/）・Figma Make（/make/）・Figma Slides（/slides/）の
+    // AIチャット欄（Lexicalエディタ）に限定する（判定はGitHubと同じ理由でここで行う）
     if (h === 'www.figma.com') {
-      if (!/^\/(board|design|make)\//.test(location.pathname)) return null;
+      if (!/^\/(board|design|make|slides)\//.test(location.pathname)) return null;
       if (target.dataset?.testid === 'code-chat-chat-box') return 'figma';
       return null;
     }
