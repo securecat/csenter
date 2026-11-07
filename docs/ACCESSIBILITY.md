@@ -67,7 +67,7 @@ When you change the UI:
 - Use native form controls (`<input>`, `<select>`, `<textarea>`). Don't use `<div>` or `<span>` as buttons; use `<button>` for actions on the page and `<a>` for navigation
 - Don't use the `disabled` attribute
 - Don't remove focus indicators (no `outline: none`)
-- Don't remove link underlines, and make them thicker on hover
+- Don't remove link underlines
 - Keep text contrast at 7:1 or higher for body text and 4.5:1 or higher for secondary text, in both light and dark themes
 - Keep non-text elements, such as borders and icons, at 3:1 or higher against adjacent colors
 - Don't apply `opacity` to elements that need contrast
@@ -159,7 +159,7 @@ UIを変更するときは、次を守ってください。
 - フォームにはネイティブの要素（`<input>`・`<select>`・`<textarea>`）を使う。`<div>` や `<span>` をボタンの代わりにしない。画面内の操作には `<button>`、ページの移動には `<a>` を使う
 - `disabled` 属性を使わない
 - フォーカスインジケーターを消さない（`outline: none` を使わない）
-- リンクの下線を消さない。ホバー時はむしろ太くする
+- リンクの下線を消さない
 - テキストのコントラスト比は、本文で 7:1 以上、補足的なテキストで 4.5:1 以上にする。ライトテーマとダークテーマのそれぞれで満たす
 - 境界線やアイコンなど、テキスト以外の要素も、隣り合う色に対して 3:1 以上にする
 - コントラストが必要な要素に `opacity` を使わない
