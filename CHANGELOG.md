@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.9.0] - 2026-11-07
+
+### Added
+
+- Add support for the Figma AI chat, covering the AI chat input in FigJam, Figma Design, Figma Make, and Figma Slides (including the prompt input shown when starting Figma Make and Figma Slides)
+
 ## [1.8.0] - 2026-11-05
 
 ### Added
@@ -135,6 +141,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.9.0] - 2026-11-07
+
+### 追加
+
+- FigmaのAIチャットに対応（FigJam・Figma Design・Figma Make・Figma SlidesのAIチャット欄。Figma Make・Figma Slidesの起動時に表示されるプロンプト入力欄を含む）
 
 ## [1.8.0] - 2026-11-05
 

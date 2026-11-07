@@ -49,11 +49,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.8.0 — 2026-11-05
+### v1.9.0 — 2026-11-07
 
 #### Added
 
-- Add support for Muse (muse.ai)
+- Add support for the Figma AI chat, covering the AI chat input in FigJam, Figma Design, Figma Make, and Figma Slides (including the prompt input shown when starting Figma Make and Figma Slides)
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -110,10 +110,10 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.8.0 — 2026-11-05
+### v1.9.0 — 2026-11-07
 
 #### 追加
 
-- Muse（muse.ai）に対応
+- FigmaのAIチャットに対応（FigJam・Figma Design・Figma Make・Figma SlidesのAIチャット欄。Figma Make・Figma Slidesの起動時に表示されるプロンプト入力欄を含む）
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
