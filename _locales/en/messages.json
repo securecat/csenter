@@ -60,6 +60,9 @@
   "optionsServiceFigma": {
     "message": "Figma AI chat (FigJam, Figma Design, Figma Make, Figma Slides)"
   },
+  "optionsServiceNotion": {
+    "message": "Notion AI (app.notion.com)"
+  },
   "optionsServiceGoogle": {
     "message": "AI Mode in Google Search (google.com/search)"
   },
