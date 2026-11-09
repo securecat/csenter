@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.10.0] - 2026-11-09
+
+### Added
+
+- Add support for Notion AI, covering the Notion AI chat input on app.notion.com
+
 ## [1.9.0] - 2026-11-07
 
 ### Added
@@ -141,6 +147,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.10.0] - 2026-11-09
+
+### 追加
+
+- Notion AIに対応（app.notion.com の Notion AI のチャット欄）
 
 ## [1.9.0] - 2026-11-07
 
