@@ -50,11 +50,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.10.0 — 2026-11-09
+### v1.10.1 — 2026-11-09
 
-#### Added
+#### Changed
 
-- Add support for Notion AI, covering the Notion AI chat input on app.notion.com
+- Move the source files under `src/`
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -112,10 +112,10 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.10.0 — 2026-11-09
+### v1.10.1 — 2026-11-09
 
-#### 追加
+#### 変更
 
-- Notion AIに対応（app.notion.com の Notion AI のチャット欄）
+- ソースファイルを `src/` の下に移動
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
