@@ -75,7 +75,7 @@
     }
     // Notionはページ本文のブロックもcontenteditableなので、Notion AIのチャット欄に限定する。
     // チャット欄は数階層上の要素に送信ボタンを含むので、それで見分ける
-    if (h === 'www.notion.so') {
+    if (h === 'app.notion.com') {
       if (isNotionAiInput(target)) return 'notion';
       return null;
     }

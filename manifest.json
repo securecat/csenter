@@ -33,7 +33,7 @@
         "https://x.com/*",
         "https://muse.ai/*",
         "https://www.figma.com/*",
-        "https://www.notion.so/*"
+        "https://app.notion.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"
