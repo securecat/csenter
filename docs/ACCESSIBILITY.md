@@ -78,7 +78,7 @@ When you change the UI:
 
 After the change, check that everything can be operated with a keyboard alone, and that a screen reader such as NVDA reads the content correctly.
 
-When you change `content.js`, keep ignoring Enter during IME composition, and don't touch keys other than Enter.
+When you change `src/content/content.js`, keep ignoring Enter during IME composition, and don't touch keys other than Enter.
 
 ## Ownership and Maintenance
 
@@ -170,7 +170,7 @@ UIを変更するときは、次を守ってください。
 
 変更したあとは、キーボードだけですべて操作できること、NVDA などのスクリーンリーダーで内容が正しく読み上げられることを確認してください。
 
-`content.js` を変更するときは、IMEの変換中のEnterに反応しないこと、Enter以外のキーに触れないことを守ってください。
+`src/content/content.js` を変更するときは、IMEの変換中のEnterに反応しないこと、Enter以外のキーに触れないことを守ってください。
 
 ## 責任者と保守
 

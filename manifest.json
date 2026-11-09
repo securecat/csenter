@@ -11,7 +11,7 @@
     "128": "icons/icon128.png"
   },
   "action": {
-    "default_popup": "popup/popup.html",
+    "default_popup": "src/popup/popup.html",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
@@ -35,11 +35,11 @@
         "https://www.figma.com/*",
         "https://app.notion.com/*"
       ],
-      "js": ["content.js"],
+      "js": ["src/content/content.js"],
       "run_at": "document_idle"
     }
   ],
-  "options_page": "options/options.html",
+  "options_page": "src/options/options.html",
   "permissions": [
     "storage"
   ]
