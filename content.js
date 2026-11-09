@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true, figma: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true, figma: true, notion: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -73,7 +73,22 @@
       if (target.dataset?.testid === 'code-chat-chat-box') return 'figma';
       return null;
     }
+    // Notionはページ本文のブロックもcontenteditableなので、Notion AIのチャット欄に限定する。
+    // チャット欄は数階層上の要素に送信ボタンを含むので、それで見分ける
+    if (h === 'www.notion.so') {
+      if (isNotionAiInput(target)) return 'notion';
+      return null;
+    }
     return null;
+  }
+
+  function isNotionAiInput(target) {
+    let el = target.parentElement;
+    for (let i = 0; el && i < 4; i++) {
+      if (el.querySelector('[data-testid="agent-chat-send-button"]')) return true;
+      el = el.parentElement;
+    }
+    return false;
   }
 
   function isSendKey(e) {

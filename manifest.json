@@ -32,7 +32,8 @@
         "https://grok.com/*",
         "https://x.com/*",
         "https://muse.ai/*",
-        "https://www.figma.com/*"
+        "https://www.figma.com/*",
+        "https://www.notion.so/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"
