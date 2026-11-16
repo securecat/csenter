@@ -27,7 +27,6 @@ Please report barriers through [GitHub Issues](https://github.com/securecat/csen
 The following details help us, but all of them are optional:
 
 - What you were trying to do
-- The service and the URL of the page
 - What happened, and what you expected
 - Your OS, browser version, and CSEnter version
 - Any assistive technology you use, such as a screen reader
@@ -102,7 +101,6 @@ UIは WCAG 2.2 のレベル AA を目標とし、これを上限ではなく下�
 次のことを書いてもらえると助かりますが、どれも任意です。
 
 - 何をしようとしていたか
-- 使っていたサービスと、そのページのURL
 - 何が起きたか、どうなると思っていたか
 - OS、ブラウザのバージョン、CSEnter のバージョン
 - 使っている支援技術（スクリーンリーダーなど）
