@@ -4,10 +4,9 @@ Last updated: 2026-11-17
 
 ## Priorities and Goals
 
-This statement covers two things:
+This statement covers:
 
 - The extension's own UI (the popup and the options page)
-- How CSEnter affects keyboard input in each supported AI chat service
 
 For the UI, we target WCAG 2.2 Level AA, and we treat it as a minimum, not a ceiling. Some of our own rules are stricter than AA (see [Contributor Expectations](#contributor-expectations)). We have not had a third-party evaluation, so this is a target, not a claim of conformance.
 
@@ -64,8 +63,6 @@ When you change the UI:
 
 After the change, check that everything can be operated with a keyboard alone, and that a screen reader such as NVDA reads the content correctly.
 
-When you change `src/content/content.js`, keep ignoring Enter during IME composition, and don't touch keys other than Enter.
-
 ## Ownership and Maintenance
 
 This statement is maintained by the maintainer, securecat. We update it when we add features or when the tested environments change.
@@ -82,10 +79,9 @@ Suggestions about this statement or our approach to accessibility are also welco
 
 ## 優先事項と目標
 
-この文書が対象とするのは、次の2つです。
+この文書が対象とするのは、次のとおりです。
 
 - 拡張機能そのもののUI（ポップアップと詳細設定ページ）
-- 対応している各AIチャットサービスで、CSEnter がキー操作に与える影響
 
 UIは WCAG 2.2 のレベル AA を目標とし、これを上限ではなく下限と考えています。AAより厳しい独自の基準もあります（[貢献者への期待](#貢献者への期待)を参照）。第三者による試験は受けていないため、これは目標であり、適合を表明するものではありません。
 
@@ -141,8 +137,6 @@ UIを変更するときは、次を守ってください。
 - 自動スクロールなど、ひとりでに動くものを作らない
 
 変更したあとは、キーボードだけですべて操作できること、NVDA などのスクリーンリーダーで内容が正しく読み上げられることを確認してください。
-
-`src/content/content.js` を変更するときは、IMEの変換中のEnterに反応しないこと、Enter以外のキーに触れないことを守ってください。
 
 ## 責任者と保守
 
