@@ -1,10 +1,8 @@
 # Accessibility
 
-Last updated: 2026-11-07
+Last updated: 2026-11-17
 
 ## Priorities and Goals
-
-CSEnter for AI Chat is itself an accessibility tool. In most AI chat services, pressing Enter alone sends your message. This causes accidental sends when you press Enter to confirm an IME conversion, or when a person with an upper limb disability or tremor touches Enter unintentionally. CSEnter prevents these accidental sends by requiring a modifier key combination to send.
 
 This statement covers two things:
 
@@ -13,27 +11,15 @@ This statement covers two things:
 
 For the UI, we target WCAG 2.2 Level AA, and we treat it as a minimum, not a ceiling. Some of our own rules are stricter than AA (see [Contributor Expectations](#contributor-expectations)). We have not had a third-party evaluation, so this is a target, not a claim of conformance.
 
-## Behavior in AI Chat Services
-
-CSEnter only handles the Enter key pressed in an input field.
-
-- It ignores Enter while an IME is composing text
-- It does not touch any key or shortcut other than Enter
-- It skips input fields with `role="combobox"`, such as search boxes
-- It does nothing until you select at least one modifier key
-
 ## Supported Environments
 
 - Browser: Google Chrome (desktop)
 - Operating systems: tested on Windows and macOS
 - Screen readers: tested with NVDA on Windows. We have not yet tested other screen readers, including VoiceOver on macOS
-- All features can be operated with a keyboard alone
 
 ## Known Limitations
 
-- **Sending or line breaks may stop working after a service changes its site.** CSEnter works by re-sending Enter or Shift+Enter key events to each service's input field, so it depends on how each site handles them.
-  - Workaround: On the options page, under "Enabled services," you can turn CSEnter off for that service only. Please turn it off and let us know through GitHub Issues until a fix is released.
-- The accessibility of the AI chat services themselves is outside the scope of CSEnter.
+We are not aware of any limitations at this time.
 
 ## Reporting Accessibility Barriers
 
@@ -41,7 +27,7 @@ Please report barriers through [GitHub Issues](https://github.com/securecat/csen
 
 The following details help us, but all of them are optional:
 
-- What you were trying to do (for example, "I can't send a message in ChatGPT")
+- What you were trying to do
 - The service and the URL of the page
 - What happened, and what you expected
 - Your OS, browser version, and CSEnter version
@@ -92,11 +78,9 @@ Suggestions about this statement or our approach to accessibility are also welco
 
 # アクセシビリティ
 
-最終更新：2026-11-07
+最終更新：2026-11-17
 
 ## 優先事項と目標
-
-CSEnter for AI Chat は、それ自体がアクセシビリティのための道具です。多くのAIチャットサービスでは、Enterキー単体でメッセージが送信されます。そのため、IMEで変換を確定しようとしてEnterを押したときや、上肢障害や振動障害のある方が意図せずEnterに触れたときに、書きかけのメッセージが送信されてしまいます。CSEnter は、送信に修飾キーとの組み合わせを求めることで、こうした誤送信を防ぎます。
 
 この文書が対象とするのは、次の2つです。
 
@@ -105,27 +89,15 @@ CSEnter for AI Chat は、それ自体がアクセシビリティのための道
 
 UIは WCAG 2.2 のレベル AA を目標とし、これを上限ではなく下限と考えています。AAより厳しい独自の基準もあります（[貢献者への期待](#貢献者への期待)を参照）。第三者による試験は受けていないため、これは目標であり、適合を表明するものではありません。
 
-## 各AIチャットサービスでの動作
-
-CSEnter が扱うのは、入力欄で押されたEnterキーだけです。
-
-- IMEで変換している間のEnterには反応しません
-- Enter以外のキーやショートカットには触れません
-- 検索欄など、`role="combobox"` の入力欄は対象外です
-- 修飾キーを1つも選んでいない間は、何もしません
-
 ## 対応している環境
 
 - ブラウザ：Google Chrome（デスクトップ版）
 - OS：Windows、macOS で動作を確認済み
 - スクリーンリーダー：Windows の NVDA で読み上げを確認済み。macOS の VoiceOver など、ほかのスクリーンリーダーではまだ試していません
-- すべての機能を、キーボードだけで操作できます
 
 ## 既知の制限
 
-- **サービス側でサイトが変更されると、送信や改行が意図どおりに動かなくなることがあります。** CSEnter は、各サービスの入力欄に Enter や Shift+Enter のキー入力を作り直して送ることで動いているため、各サイトがそれをどう扱うかに左右されます。
-  - 回避策：詳細設定の「有効なサービス」で、そのサービスだけ CSEnter を無効にできます。修正版が出るまでは無効にしたうえで、GitHub Issues でお知らせください。
-- 各AIチャットサービスそのもののアクセシビリティは、CSEnter の対象外です。
+現在、把握している制限はありません。
 
 ## アクセシビリティの問題を報告する
 
@@ -133,7 +105,7 @@ CSEnter が扱うのは、入力欄で押されたEnterキーだけです。
 
 次のことを書いてもらえると助かりますが、どれも任意です。
 
-- 何をしようとしていたか（例：「ChatGPTで送信できない」）
+- 何をしようとしていたか
 - 使っていたサービスと、そのページのURL
 - 何が起きたか、どうなると思っていたか
 - OS、ブラウザのバージョン、CSEnter のバージョン
