@@ -27,7 +27,6 @@
         "https://gemini.google.com/*",
         "https://www.google.com/search*",
         "https://notebook.google.com/*",
-        "https://copilot.com/*",
         "https://copilot.cloud.microsoft/*",
         "https://github.com/*",
         "https://grok.com/*",

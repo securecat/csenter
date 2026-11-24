@@ -43,7 +43,7 @@
     "message": "Gemini Notebook (notebook.google.com)"
   },
   "optionsServiceCopilot": {
-    "message": "Microsoft Copilot (copilot.com)"
+    "message": "Microsoft Copilot (copilot.cloud.microsoft)"
   },
   "optionsServiceGithub": {
     "message": "GitHub Copilot (github.com/copilot)"

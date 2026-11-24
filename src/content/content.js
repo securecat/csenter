@@ -46,7 +46,6 @@
     if (h === 'gemini.google.com') return 'gemini';
     if (h === 'www.google.com') return 'google';
     if (h === 'notebook.google.com') return 'notebook';
-    if (h === 'copilot.com') return 'copilot';
     // copilot.cloud.microsoft は Microsoft 365 Copilot のアプリで、チャット以外の入力欄も
     // あるため、チャット欄（Lexicalエディタ）のIDで限定する
     if (h === 'copilot.cloud.microsoft') {

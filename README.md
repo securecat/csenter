@@ -8,7 +8,7 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
 - Gemini Notebook (notebook.google.com)
-- Microsoft Copilot (copilot.com)
+- Microsoft Copilot (copilot.cloud.microsoft)
 - GitHub Copilot (github.com/copilot, and the Copilot chat input on the dashboard and in the side panel)
 - Grok (grok.com)
 - Grok on X (x.com/i/grok, and the Grok chat window opened from posts)
@@ -70,7 +70,7 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - ChatGPT (chatgpt.com)
 - Gemini (gemini.google.com)
 - Gemini Notebook (notebook.google.com)
-- Microsoft Copilot (copilot.com)
+- Microsoft Copilot (copilot.cloud.microsoft)
 - GitHub Copilot（github.com/copilot、およびダッシュボードやサイドパネルのCopilotチャット欄）
 - Grok (grok.com)
 - X の Grok（x.com/i/grok、およびポストのGrokボタンで開くチャット欄）
