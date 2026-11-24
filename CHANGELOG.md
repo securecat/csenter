@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.11.0] - 2026-11-24
+
+### Added
+
+- Add support for Venice (venice.ai)
+
 ## [1.10.2] - 2026-11-24
 
 ### Fixed
@@ -160,6 +166,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.11.0] - 2026-11-24
+
+### 追加
+
+- Venice（venice.ai）に対応
 
 ## [1.10.2] - 2026-11-24
 

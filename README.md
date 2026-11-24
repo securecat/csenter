@@ -51,12 +51,11 @@ Enter key presses during IME composition (e.g. Japanese input) are ignored and p
 
 ## Changelog
 
-### v1.10.2 — 2026-11-24
+### v1.11.0 — 2026-11-24
 
-#### Fixed
+#### Added
 
-- Fix CSEnter not working in Microsoft Copilot, which has moved from copilot.com to copilot.cloud.microsoft
-- Fix line breaks being inserted twice when two copies of CSEnter are enabled at the same time (for example, the Chrome Web Store version and an unpacked one)
+- Add support for Venice (venice.ai)
 
 See [CHANGELOG.md](CHANGELOG.md) for full history.
 
@@ -115,11 +114,10 @@ https://chromewebstore.google.com/detail/csenter-for-ai-chat/glkdanbnmpbdmljmcgl
 
 ## 更新履歴
 
-### v1.10.2 — 2026-11-24
+### v1.11.0 — 2026-11-24
 
-#### 修正
+#### 追加
 
-- Microsoft Copilot が copilot.com から copilot.cloud.microsoft に移ったため、CSEnter が効かなくなっていた問題を修正
-- CSEnter が2つ同時に有効になっている場合（Chrome ウェブストア版と、パッケージ化されていない版など）に、改行が2回入る問題を修正
+- Venice（venice.ai）に対応
 
 全履歴は [CHANGELOG.md](CHANGELOG.md) を参照。
