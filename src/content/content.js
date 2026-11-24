@@ -143,13 +143,16 @@
     // comboboxロール（検索窓・コマンドパレットなど）は除外
     if (e.target.getAttribute('role') === 'combobox') return;
 
+    // stopImmediatePropagation で、同じ document に登録された他のリスナーも止める。
+    // CSEnter が2つ（ストア版と開発版など）有効になっていると、stopPropagation では
+    // もう一方の CSEnter も同じキー入力を処理し、改行が2回入ってしまうため
     if (isSendKey(e)) {
       e.preventDefault();
-      e.stopPropagation();
+      e.stopImmediatePropagation();
       fireEnter(e.target);
     } else if (isNewlineKey(e)) {
       e.preventDefault();
-      e.stopPropagation();
+      e.stopImmediatePropagation();
       // textareaの場合は直接改行を挿入、それ以外はShift+Enterを再発火
       if (e.target.tagName === 'TEXTAREA') {
         insertNewlineIntoTextarea(e.target);
