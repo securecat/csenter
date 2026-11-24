@@ -4,7 +4,7 @@
 
   const DEFAULT_MODIFIERS = { shift: false, ctrl: false, alt: false };
   let currentModifiers = { ...DEFAULT_MODIFIERS };
-  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true, figma: true, notion: true };
+  const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, google: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true, figma: true, notion: true, venice: true };
   let enabledServices = { ...DEFAULT_SERVICES };
 
   // 旧バージョン（ラジオ選択式）からの移行用
@@ -82,6 +82,12 @@
     // チャット欄は数階層上の要素に送信ボタンを含むので、それで見分ける
     if (h === 'app.notion.com') {
       if (isNotionAiInput(target)) return 'notion';
+      return null;
+    }
+    // Veniceはチャット以外の画面もあるため、チャット欄（トップページと会話ページの両方で
+    // name="prompt-textarea"）に限定する
+    if (h === 'venice.ai') {
+      if (target.name === 'prompt-textarea') return 'venice';
       return null;
     }
     return null;
