@@ -1,5 +1,5 @@
-const SERVICE_KEYS = ['claude', 'chatgpt', 'gemini', 'notebook', 'copilot', 'github', 'grok', 'grokx', 'muse', 'figma', 'notion', 'google'];
-const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true, figma: true, notion: true, google: true };
+const SERVICE_KEYS = ['claude', 'chatgpt', 'gemini', 'notebook', 'copilot', 'github', 'grok', 'grokx', 'muse', 'figma', 'notion', 'venice', 'google'];
+const DEFAULT_SERVICES = { claude: true, chatgpt: true, gemini: true, notebook: true, copilot: true, github: true, grok: true, grokx: true, muse: true, figma: true, notion: true, venice: true, google: true };
 const UI_LANGUAGES = ['en', 'ja'];
 
 const checkboxes = Object.fromEntries(

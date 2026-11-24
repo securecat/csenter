@@ -63,6 +63,9 @@
   "optionsServiceNotion": {
     "message": "Notion AI (app.notion.com)"
   },
+  "optionsServiceVenice": {
+    "message": "Venice (venice.ai)"
+  },
   "optionsServiceGoogle": {
     "message": "AI Mode in Google Search (google.com/search)"
   },

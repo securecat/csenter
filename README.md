@@ -15,6 +15,7 @@ A Chrome extension that lets you change the send trigger key in AI chat services
 - Muse (muse.ai)
 - Figma AI chat (the AI chat window in FigJam, Figma Design, Figma Make, and Figma Slides)
 - Notion AI (the Notion AI chat input on app.notion.com)
+- Venice (venice.ai)
 - AI Mode in Google Search (google.com/search)
 
 ## Installation
@@ -78,6 +79,7 @@ AIチャットサービスの入力欄における送信トリガーキーを変
 - Muse (muse.ai)
 - Figma の AIチャット（FigJam・Figma Design・Figma Make・Figma SlidesのAIチャット欄）
 - Notion AI（app.notion.com の Notion AI のチャット欄）
+- Venice (venice.ai)
 - Google検索 AIモード (google.com/search)
 
 ## インストール
