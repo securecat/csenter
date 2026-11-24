@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [1.10.2] - 2026-11-24
+
+### Fixed
+
+- Fix CSEnter not working in Microsoft Copilot, which has moved from copilot.com to copilot.cloud.microsoft
+- Fix line breaks being inserted twice when two copies of CSEnter are enabled at the same time (for example, the Chrome Web Store version and an unpacked one)
+
 ## [1.10.1] - 2026-11-09
 
 ### Changed
@@ -153,6 +160,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ---
 
 # 更新履歴
+
+## [1.10.2] - 2026-11-24
+
+### 修正
+
+- Microsoft Copilot が copilot.com から copilot.cloud.microsoft に移ったため、CSEnter が効かなくなっていた問題を修正
+- CSEnter が2つ同時に有効になっている場合（Chrome ウェブストア版と、パッケージ化されていない版など）に、改行が2回入る問題を修正
 
 ## [1.10.1] - 2026-11-09
 
