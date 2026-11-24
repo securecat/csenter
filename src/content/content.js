@@ -47,6 +47,12 @@
     if (h === 'www.google.com') return 'google';
     if (h === 'notebook.google.com') return 'notebook';
     if (h === 'copilot.com') return 'copilot';
+    // copilot.cloud.microsoft は Microsoft 365 Copilot のアプリで、チャット以外の入力欄も
+    // あるため、チャット欄（Lexicalエディタ）のIDで限定する
+    if (h === 'copilot.cloud.microsoft') {
+      if (target.id === 'm365-chat-editor-target-element') return 'copilot';
+      return null;
+    }
     // GitHubはIssue・PRのコメント欄などを除外するため、Copilotのページと、
     // ダッシュボード（github.com/）などにあるCopilotのチャット欄に限定する
     // （ページ遷移でスクリプトが再注入されないことがあるため、manifestではなくここで判定する）
